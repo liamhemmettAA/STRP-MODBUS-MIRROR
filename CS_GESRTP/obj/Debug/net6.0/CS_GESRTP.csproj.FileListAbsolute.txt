@@ -1,0 +1,14 @@
+C:\Users\PC\Source\CS_GESRTP\bin\Debug\net6.0\CS_GESRTP.exe
+C:\Users\PC\Source\CS_GESRTP\bin\Debug\net6.0\CS_GESRTP.deps.json
+C:\Users\PC\Source\CS_GESRTP\bin\Debug\net6.0\CS_GESRTP.runtimeconfig.json
+C:\Users\PC\Source\CS_GESRTP\bin\Debug\net6.0\CS_GESRTP.dll
+C:\Users\PC\Source\CS_GESRTP\bin\Debug\net6.0\CS_GESRTP.pdb
+C:\Users\PC\Source\CS_GESRTP\obj\Debug\net6.0\CS_GESRTP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Source\CS_GESRTP\obj\Debug\net6.0\CS_GESRTP.AssemblyInfoInputs.cache
+C:\Users\PC\Source\CS_GESRTP\obj\Debug\net6.0\CS_GESRTP.AssemblyInfo.cs
+C:\Users\PC\Source\CS_GESRTP\obj\Debug\net6.0\CS_GESRTP.csproj.CoreCompileInputs.cache
+C:\Users\PC\Source\CS_GESRTP\obj\Debug\net6.0\CS_GESRTP.dll
+C:\Users\PC\Source\CS_GESRTP\obj\Debug\net6.0\refint\CS_GESRTP.dll
+C:\Users\PC\Source\CS_GESRTP\obj\Debug\net6.0\CS_GESRTP.pdb
+C:\Users\PC\Source\CS_GESRTP\obj\Debug\net6.0\CS_GESRTP.genruntimeconfig.cache
+C:\Users\PC\Source\CS_GESRTP\obj\Debug\net6.0\ref\CS_GESRTP.dll
