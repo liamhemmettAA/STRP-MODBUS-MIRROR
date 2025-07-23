@@ -139,7 +139,10 @@ Command line:
 dotnet run -c Release
 
 ```
+```bash 
+python .\createSTcode.py
 
+```
 ---
 
 ## Logging & shutdown
