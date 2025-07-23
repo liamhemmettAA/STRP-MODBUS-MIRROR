@@ -1,6 +1,6 @@
 # SRTP‑MODBUS‑MIRROR
 
-Bidirectional synchroniser that keeps GE/Emerson PACMachine Edition PLC registers (via **SRTP**) and a **Modbus TCP** register block in lock‑step. Multiple PLCs can be mirrored to a single Modbus slave. Conflicts are auto‑resolved (PLC wins), and optional byte‑swapping is supported per mapping.
+Bidirectional synchroniser that keeps GE/Emerson PACMachine Edition PLC registers (via **SRTP**) and a **Modbus TCP**. Multiple PLCs can be mirrored to a single Modbus slave. Conflicts are auto‑resolved (PLC wins).
 
 ---
 
@@ -21,13 +21,11 @@ Bidirectional synchroniser that keeps GE/Emerson PACMachine Edition PLC register
 
 ## How it works
 
-- You declare one or more **RegisterSyncMapping** objects that map a PLC register range (e.g. `%R01001`) to a Modbus range (e.g. `400001`).
+- Specify STRP IP:Port for one or more GE PLC's that map a PLC register range (e.g. `%R01001`) to a Modbus range (e.g. `400001`).
 - On startup the program:
 
   1. Reads both sides and reconciles differences (first run init).
   2. Starts a periodic loop. For each mapping it reads PLC & Modbus, detects which side changed since last scan, and writes the newer value to the other side. If **both** changed, the PLC value wins.
-
-- A per‑mapping `SwapBytes` flag lets you deal with 16‑bit endianness differences.
 
 ---
 
@@ -40,21 +38,8 @@ CS_GESRTP/                      # C# synchroniser
   ├─ PlcClient.cs               # SRTP client wrapper (not shown above)
   └─ ConfigLoader.cs            # config.json parser
 
-build_pac_files.py              # Helper to autogenerate PME ST & CSV imports
+createSTcode.py                 # Helper to autogenerate PME ST & CSV imports
 IO-Mapping-Modbus-Upgrade.csv   # Your exported mapping sheet (input to script)
-```
-
-### Core class excerpt
-
-```csharp
-public sealed record RegisterSyncMapping(string PlcArea, int PlcStart, int ModbusStart, int Count, bool SwapBytes = false);
-
-internal sealed class RegisterSynchronizer : IAsyncDisposable
-{
-    // ... ctor omitted
-    public async Task InitialiseAsync() { /* first-run reconciliation */ }
-    public async Task RunAsync(TimeSpan interval, CancellationToken ct) { /* loop */ }
-}
 ```
 
 ---
@@ -113,8 +98,6 @@ Minimal example (with two PLC blocks):
     - `Modbus`: starting Modbus register (4xxxx style).
     - `Count`: number of 16‑bit registers.
     - `SwapBytes` (optional): override default for this block.
-
-> **Tip:** Keep blocks ≤ 120 words to stay under the Modbus 125‑register limit (the code chunks automatically when reading, but writing single regs anyway).
 
 ---
 
@@ -181,10 +164,13 @@ If your synchroniser runs **inside a VM** but you need a PLC (or another host) t
 
 ### 1. Install Nmap/Ncat (Windows host)
 
-- Download & install Nmap (which includes `ncat.exe`).
+- Download & install Nmap (which includes `ncat.exe`). -> https://nmap.org/download#windows
 - Default path is usually `C:\Program Files (x86)\Nmap\ncat.exe` (short path `C:\Progra~2\Nmap\ncat.exe`).
 
 ### 2. Start a persistent relay in PowerShell
+
+- Complete in powershell for every PLC port.
+- Check Sim for IP.
 
 ```powershell
 PS C:\> & 'C:\Progra~2\Nmap\ncat.exe' -l 18245 --keep-open --sh-exec '"C:\Progra~2\Nmap\ncat.exe" 127.1.0.2 18245'
@@ -196,18 +182,6 @@ PS C:\> & 'C:\Progra~2\Nmap\ncat.exe' -l 18245 --keep-open --sh-exec '"C:\Progra
 - `--keep-open` – keep the listener alive for multiple connections.
 - `--sh-exec "…"` – for each incoming connection, execute another `ncat` that dials the VM side (`127.1.0.2:18245` in this example).
 - Replace `127.1.0.2` with the IP that the **VM can reach the PLC service on** (e.g., the VM’s host-only adapter or NAT loopback).
-
-### 3. Open firewall & test
-
-- Allow inbound TCP 18245 on the host firewall.
-- From an external machine, connect to `<host-ip>:18245` and verify packets reach the VM app.
-
-### 4. Make it survive reboots (optional)
-
-- Wrap the command with **Task Scheduler**, **NSSM**, or a PowerShell service script.
-- Or create a small `.ps1` wrapper and schedule it at logon.
-
-> Need other ports (e.g., 18246)? Run another listener or duplicate the command with the new port.
 
 ## Troubleshooting
 
