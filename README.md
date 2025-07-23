@@ -34,9 +34,9 @@ Bidirectional synchroniser that keeps GE/Emerson PACMachine Edition PLC register
 ```
 CS_GESRTP/                      # C# synchroniser
   ├─ Program.cs                 # entry point, loads config and spins workers
-  ├─ RegisterSynchronizer.cs    # core mirror logic (excerpt below)
   ├─ PlcClient.cs               # SRTP client wrapper (not shown above)
-  └─ ConfigLoader.cs            # config.json parser
+  ├─ ConfigLoader.cs            # config.json parser
+  └─ config.json
 
 createSTcode.py                 # Helper to autogenerate PME ST & CSV imports
 IO-Mapping-Modbus-Upgrade.csv   # Your exported mapping sheet (input to script)
