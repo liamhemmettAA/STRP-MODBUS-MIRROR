@@ -39,6 +39,38 @@ def st_safe(text: str) -> str:
 def esc_comment(txt: str) -> str:
     return txt.replace("*)", ")*").strip()
 
+def st_literal(dtyp: str, val: str) -> str:
+    """Return a Structured-Text literal matching dtyp (BOOL/INT/WORD/STRING)."""
+    val = val.strip()
+
+    # -------- BOOL ----------------------------------------------------
+    if dtyp == "BOOL":
+        return "TRUE" if val.upper() in ("1", "TRUE", "T", "YES") else "FALSE"
+
+    # -------- STRING --------------------------------------------------
+    if dtyp == "STRING":
+        escaped = val.replace("'", "''")      # double any single quotes
+        return f"\"{escaped}\""
+
+    # -------- INT -----------------------------------------------------
+    if dtyp == "INT":
+        try:
+            num = int(val, 0)                 # accepts 0xFF, 16#FF etc.
+        except ValueError:
+            num = 0
+        return f"{num}"
+
+    # -------- WORD ----------------------------------------------------
+    if dtyp == "WORD":
+        try:
+            num = int(val, 0)
+        except ValueError:
+            num = 0
+        return f"WORD#{num}"
+
+    # -------- fallback ------------------------------------------------
+    return val or "0"
+
 # ---------- read CSV with loose header matching -----------------------
 projects = collections.defaultdict(lambda: {"map": [], "rvars": {}})
 
@@ -125,5 +157,16 @@ for proj, blk in projects.items():
             wr.writerow(row)
     print("✔", csv_path)
 
+    init_path = pathlib.Path(f"{proj}_init.st")
+    init_block = [
+        "(* AUTOGEN REGISTER PRESETS — call once on power-up *)",
+          ] + [
+        f"   {r_sym} := {st_literal(dtyp, vinit)}; (* {tag_sym} *)"
+            for r_sym, rloc, tag_sym, dtyp, vinit
+            in sorted(blk['rvars'].values())
+    ]   
+
+    init_path.write_text("\n".join(init_block), encoding="utf-8")
+    print("✔", init_path)
 print("\n→ Import each *_Rvars.csv via PME ‘Variables → Import…’.")
 print("→ Paste the corresponding *_map.st into your Structured‑Text routine.")
