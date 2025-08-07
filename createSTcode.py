@@ -7,6 +7,9 @@ import csv, re, collections, pathlib
 
 SRC_CSV = "IO-Mapping-Modbus-Upgrade.csv"       # ← your exported sheet
 # logical column keys we need (lower‑case, no spaces)
+
+GLOBAL_MAP = pathlib.Path("global_io_map.csv")   # PLC-addr,R-addr on disk
+
 NEEDED = dict(
     proj="projectname",
     tag="plctag",
@@ -66,11 +69,15 @@ def st_literal(dtyp: str, val: str) -> str:
             num = int(val, 0)
         except ValueError:
             num = 0
-        return f"WORD#{num}"
+        return f"{num}"
 
     # -------- fallback ------------------------------------------------
     return val or "0"
-
+io2r = {}
+if GLOBAL_MAP.exists():
+    with GLOBAL_MAP.open(newline='') as f:
+        rd = csv.reader(f)
+        io2r = {plc.strip().upper(): r.strip().upper() for plc, r in rd if plc and r}
 # ---------- read CSV with loose header matching -----------------------
 projects = collections.defaultdict(lambda: {"map": [], "rvars": {}})
 
@@ -99,6 +106,20 @@ with open(SRC_CSV, newline='', encoding="utf-8-sig") as f:
         if not init:
             init = "0"
         tag   = st_safe(name)           # symbolic tag name
+
+        # >>> ADDED ––––– decide the definitive R-address -------------
+        if not rloc and plc in io2r:                # (1) CSV blank
+            rloc = io2r[plc]
+
+        elif plc in io2r and rloc and rloc != io2r[plc]:
+            print(f"⚠  {plc}: overriding CSV {rloc} "
+                  f"with master {io2r[plc]}")
+            rloc = io2r[plc]
+
+        if plc not in io2r and rloc:
+            io2r[plc] = rloc                        # (3) new mapping
+
+
         r_sym = rloc.replace("%", "")   # R01019 …
 
         P = projects[proj]
@@ -168,5 +189,12 @@ for proj, blk in projects.items():
 
     init_path.write_text("\n".join(init_block), encoding="utf-8")
     print("✔", init_path)
+# >>> ADDED ––––– save master mapping back to disk ----------------------
+with GLOBAL_MAP.open("w", newline='') as f:
+    wr = csv.writer(f)
+    for plc, r in sorted(io2r.items()):
+        wr.writerow([plc, r])
+print("✔  master map updated →", GLOBAL_MAP)
+# <<< ADDED
 print("\n→ Import each *_Rvars.csv via PME ‘Variables → Import…’.")
 print("→ Paste the corresponding *_map.st into your Structured‑Text routine.")
