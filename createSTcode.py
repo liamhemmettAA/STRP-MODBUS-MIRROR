@@ -5,7 +5,7 @@
 # ----------------------------------------------------------------------
 import csv, re, collections, pathlib
 
-SRC_CSV = "IO-Mapping-Modbus-Upgrade.csv"       # ← your exported sheet
+SRC_CSV = "IO-Mapping-Modbus-Curr.csv"       # ← your exported sheet
 # logical column keys we need (lower‑case, no spaces)
 
 GLOBAL_MAP = pathlib.Path("global_io_map.csv")   # PLC-addr,R-addr on disk
