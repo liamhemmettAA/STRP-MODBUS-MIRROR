@@ -166,554 +166,550 @@ RLF,%R00101,%R01164,400164,RFID1_RD,STRING,Read Data,82
 RLF,%R00146,%R01165,400165,RFID1_SN,STRING,Serial number,6
 RLF,%R00201,%R01166,400166,RFID2_RD,STRING,Read Data,82
 RLF,%R00246,%R01167,400167,RFID2_SN,STRING,Serial Number,6
-RLF,%R00101,%R01708,400708,RFID1_RD,STRING,Read Data,
-RLF,%R00146,%R01709,400709,RFID1_SN,STRING,Serial number,
-RLF,%M00104,%R01710,400710,RFID1_ST,BOOL,Setup Trigger,
-RLF,%M00101,%R01711,400711,RFID1_TST,BOOL,Time Sync Trigger,
-RLF,%M00102,%R01712,400712,RFID1_VR,BOOL,Valid Read,
-RLF,%M00113,%R01713,400713,RFID2_Online,BOOL,Online,
-RLF,%R00201,%R01714,400714,RFID2_RD,STRING,Read Data,
-RLF,%R00246,%R01715,400715,RFID2_SN,STRING,Serial Number,
-RLF,%M00114,%R01716,400716,RFID2_ST,BOOL,Setup Trigger,
-RLF,%M00111,%R01717,400717,RFID2_TST,BOOL,Time Sync Trigger,
-RLF,%M00112,%R01718,400718,RFID2_VR,BOOL,Valid Read,
-RLF_SUB_PLC,%AI0001,%R01168,400168,CV04_MTR1_CRNT,INT,,-7920
-RLF_SUB_PLC,%AI0002,%R01169,400169,CV04_MTR2_CRNT,INT,,-7920
-RLF_SUB_PLC,%AI0003,%R01170,400170,FV01c_POSTN,INT,,16740
-RLF_SUB_PLC,%AI0004,%R01171,400171,FV02c_POSTN,INT,Coal Valve 2 Control Gate Position,21980
-RLF_SUB_PLC,%AI0005,%R01172,400172,FV03c_POSTN,INT,Coal Valve 3 Control Gate Position,24640
-RLF_SUB_PLC,%AI0006,%R01173,400173,FV04c_POSTN,INT,Coal Valve 4 Control Gate Position,23180
-RLF_SUB_PLC,%AI0011,%R01174,400174,BN02_LVL,INT,Bin Ultrasonic Level,32040
-RLF_SUB_PLC,%AI0012,%R01175,400175,CV04_WGH05_FLWRT,INT,Conveyor 4 Belt Weigher Coal Flow Rate,10
-RLF_SUB_PLC,%AI0013,%R01176,400176,CV04_WGH04_FLWRT,INT,Conveyor 4 Belt Weigher Coal Flow Rate,0
-RLF_SUB_PLC,%AI0014,%R01177,400177,CV04_WGH03_FLWRT,INT,Conveyor 4 Belt Weigher Coal Flow Rate,-20
-RLF_SUB_PLC,%AI0015,%R01178,400178,CV04_WGH02_FLWRT,INT,Conveyor 4 Belt Weigher Coal Flow Rate,-40
-RLF_SUB_PLC,%AI0028,%R01179,400179,FV05c_POSTN,INT,Coal Valve 5 Control Gate Position,19843
-RLF_SUB_PLC,%AI0029,%R01180,400180,CV04_WGH07_FLWRT,INT,Conveyor 4 Belt Weigher Coal Flow Rate,0
-RLF_SUB_PLC,%AI0033,%R01181,400181,CV04_MTR1_RTD1,INT,Conveyor 4 Drive A Winding RTD 1,54
-RLF_SUB_PLC,%AI0034,%R01182,400182,CV04_MTR1_RTD2,INT,Conveyor 4 Drive A Winding RTD 2,56
-RLF_SUB_PLC,%AI0035,%R01183,400183,CV04_MTR1_RTD3,INT,Conveyor 4 Drive A Winding RTD 3,49
-RLF_SUB_PLC,%AI0036,%R01184,400184,CV04_BRG1_RTD1,INT,Conveyor 4 Drive A Bearing RTD 1,45
-RLF_SUB_PLC,%AI0037,%R01185,400185,CV04_BRG1_RTD2,INT,Conveyor 4 Drive A Bearing RTD 2,42
-RLF_SUB_PLC,%AI0038,%R01186,400186,CV04_GBOX1_RTD,INT,Conveyor 4 Drive A Gearbox RTD,42
-RLF_SUB_PLC,%AI0039,%R01187,400187,CV04_MTR2_RTD1,INT,Conveyor 4 Drive B Winding RTD 1,47
-RLF_SUB_PLC,%AI0040,%R01188,400188,CV04_MTR2_RTD2,INT,Conveyor 4 Drive B Winding RTD 2,47
-RLF_SUB_PLC,%AI0041,%R01189,400189,CV04_MTR2_RTD3,INT,Conveyor 4 Drive B Winding RTD 3,57
-RLF_SUB_PLC,%AI0042,%R01190,400190,CV04_BRG2_RTD1,INT,Conveyor 4 Drive B Bearing RTD 1,41
-RLF_SUB_PLC,%AI0043,%R01191,400191,CV04_BRG2_RTD2,INT,Conveyor 4 Drive B Bearing RTD 2,41
-RLF_SUB_PLC,%AI0044,%R01192,400192,CV04_GBOX2_RTD,INT,Conveyor 4 Drive B Gearbox RTD,36
-RLF_SUB_PLC,%AI0045,%R01193,400193,CH4_GAS_LVL1,INT,Coal Valve 1 CH4 Detectorr,0
-RLF_SUB_PLC,%AI0046,%R01194,400194,CO_GAS_LVL1,INT,Coal Valve 1 CO Detector ,0
-RLF_SUB_PLC,%AI0047,%R01195,400195,CH4_GAS_LVL2,INT,Coal Valve 2 CH4 Detectorr,0
-RLF_SUB_PLC,%AI0048,%R01196,400196,CO_GAS_LVL2,INT,Coal Valve 2 CO Detector ,0
-RLF_SUB_PLC,%AI0049,%R01197,400197,CH4_GAS_LVL3,INT,Coal Valve 3 CH4 Detector ,0
-RLF_SUB_PLC,%AI0050,%R01198,400198,CO_GAS_LVL3,INT,Coal Valve 3 CO Detector ,0
-RLF_SUB_PLC,%AI0051,%R01199,400199,CH4_GAS_LVL4,INT,Coal Valve 4 CH4 Detector ,0
-RLF_SUB_PLC,%AI0052,%R01200,400200,CO_GAS_LVL4,INT,Coal Valve 4 CO Detector ,0
-RLF_SUB_PLC,%AI0053,%R01201,400201,CH4_GAS_LVL5,INT,Coal Valve 5 CH4 Detector ,0
-RLF_SUB_PLC,%AI0054,%R01202,400202,CO_GAS_LVL5,INT,Coal Valve 5 CO Detector ,0
-RLF_SUB_PLC,%AI0064,%R01203,400203,FN01_ANEM,INT,Reclaim Tunnel Air Flow,0
-RLF_SUB_PLC,%AI0071,%R01204,400204,CV04_TT01_RAW,INT,CV04 FV01 Thermal Sensor Temperature Raw,7124
-RLF_SUB_PLC,%AI0072,%R01205,400205,CV04_TT02_RAW,INT,CV04 FV02 Thermal Sensor Temperature Raw,6714
-RLF_SUB_PLC,%AI0073,%R01206,400206,CV04_TT03_RAW,INT,CV04 FV03 Thermal Sensor Temperature Raw,6744
-RLF_SUB_PLC,%AI0074,%R01207,400207,CV04_TT04_RAW,INT,CV04 FV04 Thermal Sensor Temperature,6454
-RLF_SUB_PLC,%AI0075,%R01208,400208,CV04_TT05_RAW,INT,CV04 FV05 Thermal Sensor Temperature,6183
-RLF_SUB_PLC,%AI0076,%R01209,400209,RLF_SUB_Rack2_Slot4_AI06,INT,Rack 2 Slot 4 AI06,0
-RLF_SUB_PLC,%AI0077,%R01210,400210,RLF_SUB_Rack2_Slot4_AI07,INT,Rack 2 Slot 4 AI07,0
-RLF_SUB_PLC,%AI0078,%R01211,400211,RLF_SUB_Rack2_Slot4_AI08,INT,Rack 2 Slot 4 AI08,0
-RLF_SUB_PLC,%AI0079,%R01212,400212,RLF_SUB_Rack2_Slot4_AI09,INT,Rack 2 Slot 4 AI09,0
-RLF_SUB_PLC,%AI0080,%R01213,400213,RLF_SUB_Rack2_Slot4_AI10,INT,Rack 2 Slot 4 AI010,0
-RLF_SUB_PLC,%AI0081,%R01214,400214,RLF_SUB_Rack2_Slot4_AI11,INT,Rack 2 Slot 4 AI011,0
-RLF_SUB_PLC,%AI0082,%R01215,400215,RLF_SUB_Rack2_Slot4_AI12,INT,Rack 2 Slot 4 AI012,0
-RLF_SUB_PLC,%AI0083,%R01216,400216,RLF_SUB_Rack2_Slot4_AI13,INT,Rack 2 Slot 4 AI013,0
-RLF_SUB_PLC,%AI0084,%R01217,400217,RLF_SUB_Rack2_Slot4_AI14,INT,Rack 2 Slot 4 AI014,0
-RLF_SUB_PLC,%AI0085,%R01218,400218,RLF_SUB_Rack2_Slot4_AI15,INT,Rack 2 Slot 4 AI015,0
-RLF_SUB_PLC,%AI0086,%R01219,400219,RLF_SUB_Rack2_Slot4_AI16,INT,Rack 2 Slot 4 AI016,0
-RLF_SUB_PLC,%AI0087,%R01220,400220,aatempreal,REAL,,0
-RLF_SUB_PLC,%I00001,%R01221,400221,CV04_MTR1_CTRP,BOOL,Conveyor 4 Drive a Control Power Available,1
-RLF_SUB_PLC,%I00002,%R01222,400222,CV04_MTR1_CB,BOOL,Conveyor 4 Drive a Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00003,%R01223,400223,CV04_MTR1_CONT,BOOL,Conveyor 4 Drive a Contactor Closed,0
-RLF_SUB_PLC,%I00004,%R01224,400224,CV04_MTR1_ELR,BOOL,Conveyor 4 Drive A Earth Leakage Relay,1
-RLF_SUB_PLC,%I00005,%R01225,400225,CV04_MTR1_VSD_FLT,BOOL,Conveyor 4 Drive A VSD Fault,0
-RLF_SUB_PLC,%I00006,%R01226,400226,CV04_LCU_STRT,BOOL,Conveyor 4 Local Control Unit Start,0
-RLF_SUB_PLC,%I00007,%R01227,400227,CV04_LCU1_NISO,BOOL,Conveyor 4 Local Control Unit Drive a Not Isolated,0
-RLF_SUB_PLC,%I00008,%R01228,400228,CV04_LCU_ESP,BOOL,Conveyor 4 Local Control Unit Emergency Stop,0
-RLF_SUB_PLC,%I00009,%R01229,400229,CV04_LCU_BLTDFTBYP,BOOL,Conveyor 4 Local Control Unit Belt Drift Bypass,0
-RLF_SUB_PLC,%I00010,%R01230,400230,CV04_PULLSW1A,BOOL,Conveyor 4 Pullwire Switch,0
-RLF_SUB_PLC,%I00011,%R01231,400231,CV04_PULLSW1B,BOOL,Conveyor 4 Pullwire Switch,0
-RLF_SUB_PLC,%I00012,%R01232,400232,CV04_PULLSW2A,BOOL,Conveyor 4 Pullwire Switch,0
-RLF_SUB_PLC,%I00013,%R01233,400233,CV04_PULLSW2B,BOOL,Conveyor 4 Pullwire Switch,0
-RLF_SUB_PLC,%I00014,%R01234,400234,CV04_PULLSW3A,BOOL,Conveyor 4 Pullwire Switch,0
-RLF_SUB_PLC,%I00015,%R01235,400235,CV04_PULLSW3B,BOOL,Conveyor 4 Pullwire Switch,0
-RLF_SUB_PLC,%I00016,%R01236,400236,CV04_PULLSW4A,BOOL,Conveyor 4 Pullwire Switch,0
-RLF_SUB_PLC,%I00017,%R01237,400237,CV04_PULLSW4B,BOOL,Conveyor 4 Pullwire Switch,0
-RLF_SUB_PLC,%I00018,%R01238,400238,CV04_BLTDF1,BOOL,Conveyor 4 Belt Drift Switch,1
-RLF_SUB_PLC,%I00019,%R01239,400239,CV04_BLTDF2,BOOL,Conveyor 4 Belt Drift Switch,0
-RLF_SUB_PLC,%I00020,%R01240,400240,CV04_BLTDF3,BOOL,Conveyor 4 Belt Drift Switch,1
-RLF_SUB_PLC,%I00021,%R01241,400241,CV04_BLTDF8,BOOL,Conveyor 4 Belt Drift Switch 8,1
-RLF_SUB_PLC,%I00022,%R01242,400242,CV04_BLTDF7,BOOL,Conveyor 4 Belt Drift Switch 7,1
-RLF_SUB_PLC,%I00023,%R01243,400243,CV04_BLTDF6,BOOL,Conveyor 4 Belt Drift Switch,1
-RLF_SUB_PLC,%I00024,%R01244,400244,CV04_USPD,BOOL,CV04 Under Speed Switch 1,1
-RLF_SUB_PLC,%I00025,%R01245,400245,CV04_BLTRIP_01,BOOL,Conveyor 4 Belt Rip Switch No. 1 (FV03),1
-RLF_SUB_PLC,%I00026,%R01246,400246,CV04_BLTRIP_02,BOOL,Conveyor 4 Belt Rip Switch No .2 (FV02),1
-RLF_SUB_PLC,%I00027,%R01247,400247,CV04_BLTRIP_03,BOOL,Conveyor 4 Belt Rip Switch No .3 (FV01),1
-RLF_SUB_PLC,%I00028,%R01248,400248,CV04_BLTRIP_04,BOOL,Conveyor 4 Belt Rip Switch No .4 (Take-up Tower),1
-RLF_SUB_PLC,%I00029,%R01249,400249,CV04_BLTRIP_05,BOOL,Conveyor 4 Belt Rip Switch No .5 (FV04),1
-RLF_SUB_PLC,%I00030,%R01250,400250,CV04_BLTRIP_06,BOOL,Conveyor 4 Belt Rip Switch No .6 (FV05),1
-RLF_SUB_PLC,%I00031,%R01251,400251,CV04_PULLSW5A,BOOL,Conveyor 4 Pullwire Switch 5A,0
-RLF_SUB_PLC,%I00032,%R01252,400252,CV04_PULLSW5B,BOOL,Conveyor 4 Pullwire Switch 5B,0
-RLF_SUB_PLC,%I00033,%R01253,400253,CV04_BRK1_CTRP,BOOL,Conveyor 4 Drive a Brake Control Power Available,1
-RLF_SUB_PLC,%I00034,%R01254,400254,CV04_BRK1_CB,BOOL,Conveyor 4 Drive a Brake Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00035,%R01255,400255,CV04_BRK1_CONT,BOOL,Conveyor 4 Drive a Brake Contactor Closed,0
-RLF_SUB_PLC,%I00036,%R01256,400256,CV04_BRK1_ELR,BOOL,Conveyor 4 Drive a Brake Earth Leakage Relay,1
-RLF_SUB_PLC,%I00037,%R01257,400257,CV04_BRK1_TOL,BOOL,Conveyor 4 Drive a Brake Thermal Overload,0
-RLF_SUB_PLC,%I00038,%R01258,400258,CV04_BLCU1_STRT,BOOL,Conveyor 4 Drive a Brake Local Control Unit Local Start,0
-RLF_SUB_PLC,%I00039,%R01259,400259,CV04_BLCU1_ISO,BOOL,Conveyor 4 Drive a Brake Local Control Unit Local Isolator Open,0
-RLF_SUB_PLC,%I00040,%R01260,400260,CV04_BRK1_LIFT,BOOL,Conveyor 4 Drive a Brake Lifted Limit Switch,0
-RLF_SUB_PLC,%I00042,%R01261,400261,CV04_MTR1_VSD_RUN,BOOL,Conveyor 4 Motor 1 VSD Running Relay,0
-RLF_SUB_PLC,%I00044,%R01262,400262,CV04_MTR2_CTRP,BOOL,Conveyor 4 Drive b Control Power Available,1
-RLF_SUB_PLC,%I00045,%R01263,400263,CV04_MTR2_CB,BOOL,Conveyor 4 Drive b Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00046,%R01264,400264,CV04_MTR2_CONT,BOOL,Conveyor 4 Drive b Contactor Closed,0
-RLF_SUB_PLC,%I00047,%R01265,400265,CV04_MTR2_ELR,BOOL,Conveyor 4 Drive B Earth Leakage Relay,1
-RLF_SUB_PLC,%I00048,%R01266,400266,CV04_MTR2_VSD_FLT,BOOL,Conveyor 4 Drive B VSD Fault,0
-RLF_SUB_PLC,%I00049,%R01267,400267,CV04_LCU2_NISO,BOOL,Conveyor 4 Local Control Unit Drive b Not Isolated,0
-RLF_SUB_PLC,%I00050,%R01268,400268,CV04_MTR2_VSD_RUN,BOOL,Conveyor 4 Motor 2 VSD Running Relay,0
-RLF_SUB_PLC,%I00051,%R01269,400269,CV04_BRK_SPD,BOOL,CV04 Brake Speed Switch,1
-RLF_SUB_PLC,%I00053,%R01270,400270,CV04_BRK2_CTRP,BOOL,Conveyor 4 Drive b Brake Control Power Available,1
-RLF_SUB_PLC,%I00054,%R01271,400271,CV04_BRK2_CB,BOOL,Conveyor 4 Drive b Brake Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00055,%R01272,400272,CV04_BRK2_CONT,BOOL,Conveyor 4 Drive b Brake Contactor Closed,0
-RLF_SUB_PLC,%I00056,%R01273,400273,CV04_BRK2_ELR,BOOL,Conveyor 4 Drive b Brake Earth Leakage Relay,1
-RLF_SUB_PLC,%I00057,%R01274,400274,CV04_BRK2_TOL,BOOL,Conveyor 4 Drive b Brake Thermal Overload,0
-RLF_SUB_PLC,%I00058,%R01275,400275,CV04_BLCU2_STRT,BOOL,Conveyor 4 Drive b Brake Local Control Unit Local Start,0
-RLF_SUB_PLC,%I00059,%R01276,400276,CV04_BLCU2_ISO,BOOL,Conveyor 4 Drive b Brake Local Control Unit Local Isolator Open,0
-RLF_SUB_PLC,%I00060,%R01277,400277,CV04_BRK2_LIFT,BOOL,Conveyor 4 Drive b Brake Lifted Limit Switch,0
-RLF_SUB_PLC,%I00065,%R01278,400278,FV01a_CTRP,BOOL,Coal Valve 1 Vibrating Chute a Control Power Available,1
-RLF_SUB_PLC,%I00066,%R01279,400279,FV01a_MTR_CB,BOOL,Coal Valve 1 Vibrating Chute a Motor Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00067,%R01280,400280,FV01a_MTR_CONT,BOOL,Coal Valve 1 Vibrating Chute a Motor Contactor Closed,0
-RLF_SUB_PLC,%I00068,%R01281,400281,FV01a_MTR_ELR,BOOL,Coal Valve 1 Vibrating Chute a Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00069,%R01282,400282,FV01a_MTR_TOL,BOOL,Coal Valve 1 Vibrating Chute a Motor Thermal Overload,0
-RLF_SUB_PLC,%I00070,%R01283,400283,FV01a_MTR_THM,BOOL,Coal Valve 1 Vibrating Chute a Motor Thermistor,0
-RLF_SUB_PLC,%I00071,%R01284,400284,FV01_LCU_STRT,BOOL,Coal Valve 1 Local Control Unit Vibrating Drives Local Start,0
-RLF_SUB_PLC,%I00072,%R01285,400285,FV01a_LCU_ISO,BOOL,Coal Valve 1 Vibrating Chute a Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00073,%R01286,400286,FV01_LCU_ESP,BOOL,Coal Valve 1 Local Control Unit Emergency Stop,0
-RLF_SUB_PLC,%I00076,%R01287,400287,FV01b_CTRP,BOOL,Coal Valve 1 Vibrating Chute b Control Power Available,1
-RLF_SUB_PLC,%I00077,%R01288,400288,FV01b_MTR_CB,BOOL,Coal Valve 1 Vibrating Chute b Motor Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00078,%R01289,400289,FV01b_MTR_CONT,BOOL,Coal Valve 1 Vibrating Chute b Motor Contactor Closed,0
-RLF_SUB_PLC,%I00079,%R01290,400290,FV01b_MTR_ELR,BOOL,Coal Valve 1 Vibrating Chute b Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00080,%R01291,400291,FV01b_MTR_TOL,BOOL,Coal Valve 1 Vibrating Chute b Motor Thermal Overload,0
-RLF_SUB_PLC,%I00081,%R01292,400292,FV01b_MTR_THM,BOOL,Coal Valve 1 Vibrating Chute b Motor Thermistor,0
-RLF_SUB_PLC,%I00082,%R01293,400293,FV01b_LCU_ISO,BOOL,Coal Valve 1 Vibrating Chute b Local Control Unit Open,1
-RLF_SUB_PLC,%I00085,%R01294,400294,FV01c_CTRP,BOOL,Coal Valve 1 Control Gate Control Power Available,1
-RLF_SUB_PLC,%I00086,%R01295,400295,FV01c_ACT_CB,BOOL,Coal Valve 1 Control Gate Actuator Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00087,%R01296,400296,FV01c_ACT_OPNC,BOOL,Coal Valve 1 Control Gate Actuator Opening Contactor Closed,0
-RLF_SUB_PLC,%I00088,%R01297,400297,FV01c_ACT_CLSC,BOOL,Coal Valve 1 Control Gate Actuator Closing Contactor Closed,0
-RLF_SUB_PLC,%I00089,%R01298,400298,FV01c_ACT_ELR,BOOL,Coal Valve 1 Control Gate Actuator Earth Leakage Relay,1
-RLF_SUB_PLC,%I00090,%R01299,400299,FV01c_ACT_EOL,BOOL,Coal Valve 1 Control Gate Actuator Electronic Overload,1
-RLF_SUB_PLC,%I00091,%R01300,400300,FV01c_LCU_OPN,BOOL,Coal Valve 1 Control Gate Local Control Unit Open,0
-RLF_SUB_PLC,%I00092,%R01301,400301,FV01c_LCU_CLS,BOOL,Coal Valve 1 Control Gate Local Control Unit Closed,0
-RLF_SUB_PLC,%I00093,%R01302,400302,FV01c_LCU_ISO,BOOL,Coal Valve 1 Control Gate Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00094,%R01303,400303,FV01c_ACT_OSW,BOOL,Coal Valve 1 Control Gate Actuator Open Limit Switch,1
-RLF_SUB_PLC,%I00095,%R01304,400304,FV01c_ACT_CSW,BOOL,Coal Valve 1 Control Gate Actuator Closed Limit Switch,0
-RLF_SUB_PLC,%I00097,%R01305,400305,FV02a_CTRP,BOOL,Coal Valve 2 Vibrating Chute a Control Power Available,1
-RLF_SUB_PLC,%I00098,%R01306,400306,FV02a_MTR_CB,BOOL,Coal Valve 2 Vibrating Chute a Motor Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00099,%R01307,400307,FV02a_MTR_CONT,BOOL,Coal Valve 2 Vibrating Chute a Motor Contactor Closed,0
-RLF_SUB_PLC,%I00100,%R01308,400308,FV02a_MTR_ELR,BOOL,Coal Valve 2 Vibrating Chute a Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00101,%R01309,400309,FV02a_MTR_TOL,BOOL,Coal Valve 2 Vibrating Chute a Motor Thermal Overload,0
-RLF_SUB_PLC,%I00103,%R01310,400310,FV02_LCU_STRT,BOOL,Coal Valve 2 Local Control Unit Vibrating Drives Local Start,0
-RLF_SUB_PLC,%I00104,%R01311,400311,FV02a_LCU_ISO,BOOL,Coal Valve 2 Vibrating Chute a Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00105,%R01312,400312,FV02_LCU_ESP,BOOL,Coal Valve 2 Local Control Unit Emergency Stop,0
-RLF_SUB_PLC,%I00108,%R01313,400313,FV02b_CTRP,BOOL,Coal Valve 2 Vibrating Chute b Control Power Available,1
-RLF_SUB_PLC,%I00109,%R01314,400314,FV02b_MTR_CB,BOOL,Coal Valve 2 Vibrating Chute b Motor Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00110,%R01315,400315,FV02b_MTR_CONT,BOOL,Coal Valve 2 Vibrating Chute b Motor Contactor Closed,0
-RLF_SUB_PLC,%I00111,%R01316,400316,FV02b_MTR_ELR,BOOL,Coal Valve 2 Vibrating Chute b Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00112,%R01317,400317,FV02b_MTR_TOL,BOOL,Coal Valve 2 Vibrating Chute b Motor Thermal Overload,0
-RLF_SUB_PLC,%I00113,%R01318,400318,FV02b_MTR_THM,BOOL,Coal Valve 2 Vibrating Chute b Motor Thermistor,0
-RLF_SUB_PLC,%I00114,%R01319,400319,FV02b_LCU_ISO,BOOL,Coal Valve 2 Vibrating Chute b Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00117,%R01320,400320,FV02c_CTRP,BOOL,Coal Valve 2 Control Gate Control Power Available,1
-RLF_SUB_PLC,%I00118,%R01321,400321,FV02c_ACT_CB,BOOL,Coal Valve 2 Control Gate Actuator Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00119,%R01322,400322,FV02c_ACT_OPNC,BOOL,Coal Valve 2 Control Gate Actuator Opening Contactor Closed,0
-RLF_SUB_PLC,%I00120,%R01323,400323,FV02c_ACT_CLSC,BOOL,Coal Valve 2 Control Gate Actuator Closing Contactor Closed,0
-RLF_SUB_PLC,%I00121,%R01324,400324,FV02c_ACT_ELR,BOOL,Coal Valve 2 Control Gate Actuator Earth Leakage Relay,1
-RLF_SUB_PLC,%I00122,%R01325,400325,FV02c_ACT_EOL,BOOL,Coal Valve 2 Control Gate Actuator Electronic Overload,1
-RLF_SUB_PLC,%I00123,%R01326,400326,FV02c_LCU_OPN,BOOL,Coal Valve 2 Control Gate Local Control Unit Open,0
-RLF_SUB_PLC,%I00124,%R01327,400327,FV02c_LCU_CLS,BOOL,Coal Valve 2 Control Gate Local Control Unit Closed,0
-RLF_SUB_PLC,%I00125,%R01328,400328,FV02c_LCU_ISO,BOOL,Coal Valve 2 Control Gate Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00126,%R01329,400329,FV02c_ACT_OSW,BOOL,Coal Valve 2 Control Gate Actuator Open Limit Switch,1
-RLF_SUB_PLC,%I00127,%R01330,400330,FV02c_ACT_CSW,BOOL,Coal Valve 2 Control Gate Actuator Closed Limit Switch,0
-RLF_SUB_PLC,%I00129,%R01331,400331,FV03a_CTRP,BOOL,Coal Valve 3 Vibrating Chute a Control Power Available,1
-RLF_SUB_PLC,%I00130,%R01332,400332,FV03a_MTR_CB,BOOL,Coal Valve 3 Vibrating Chute a Motor Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00131,%R01333,400333,FV03a_MTR_CONT,BOOL,Coal Valve 3 Vibrating Chute a Motor Contactor Closed,0
-RLF_SUB_PLC,%I00132,%R01334,400334,FV03a_MTR_ELR,BOOL,Coal Valve 3 Vibrating Chute a Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00133,%R01335,400335,FV03a_MTR_TOL,BOOL,Coal Valve 3 Vibrating Chute a Motor Thermal Overload,0
-RLF_SUB_PLC,%I00134,%R01336,400336,FV03a_MTR_THM,BOOL,Coal Valve 3 Vibrating Chute a Motor Thermistor,0
-RLF_SUB_PLC,%I00135,%R01337,400337,FV03_LCU_STRT,BOOL,Coal Valve 3 Local Control Unit Vibrating Drives Local Start,0
-RLF_SUB_PLC,%I00136,%R01338,400338,FV03a_LCU_ISO,BOOL,Coal Valve 3 Vibrating Chute a Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00137,%R01339,400339,FV03_LCU_ESP,BOOL,Coal Valve 3 Local Control Unit Emergency Stop,0
-RLF_SUB_PLC,%I00140,%R01340,400340,FV03b_CTRP,BOOL,Coal Valve 3 Vibrating Chute b Control Power Available,1
-RLF_SUB_PLC,%I00141,%R01341,400341,FV03b_MTR_CB,BOOL,Coal Valve 3 Vibrating Chute b Motor Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00142,%R01342,400342,FV03b_MTR_CONT,BOOL,Coal Valve 3 Vibrating Chute b Motor Contactor Closed,0
-RLF_SUB_PLC,%I00143,%R01343,400343,FV03b_MTR_ELR,BOOL,Coal Valve 3 Vibrating Chute b Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00144,%R01344,400344,FV03b_MTR_TOL,BOOL,Coal Valve 3 Vibrating Chute b Motor Thermal Overload,0
-RLF_SUB_PLC,%I00145,%R01345,400345,FV03b_MTR_THM,BOOL,Coal Valve 3 Vibrating Chute b Motor Thermistor,0
-RLF_SUB_PLC,%I00146,%R01346,400346,FV03b_LCU_ISO,BOOL,Coal Valve 3 Vibrating Chute b Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00149,%R01347,400347,FV03c_CTRP,BOOL,Coal Valve 3 Control Gate Control Power Available,1
-RLF_SUB_PLC,%I00150,%R01348,400348,FV03c_ACT_CB,BOOL,Coal Valve 3 Control Gate Actuator Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00151,%R01349,400349,FV03c_ACT_OPNC,BOOL,Coal Valve 3 Control Gate Actuator Opening Contactor Closed,0
-RLF_SUB_PLC,%I00152,%R01350,400350,FV03c_ACT_CLSC,BOOL,Coal Valve 3 Control Gate Actuator Closing Contactor Closed,0
-RLF_SUB_PLC,%I00153,%R01351,400351,FV03c_ACT_ELR,BOOL,Coal Valve 3 Control Gate Actuator Earth Leakage Relay,1
-RLF_SUB_PLC,%I00154,%R01352,400352,FV03c_ACT_EOL,BOOL,Coal Valve 3 Control Gate Actuator Electronic Overload,1
-RLF_SUB_PLC,%I00155,%R01353,400353,FV03c_LCU_OPN,BOOL,Coal Valve 3 Control Gate Local Control Unit Open,0
-RLF_SUB_PLC,%I00156,%R01354,400354,FV03c_LCU_CLS,BOOL,Coal Valve 3 Control Gate Local Control Unit Closed,0
-RLF_SUB_PLC,%I00157,%R01355,400355,FV03c_LCU_ISO,BOOL,Coal Valve 3 Control Gate Local Control Unit  Isolator Open,1
-RLF_SUB_PLC,%I00158,%R01356,400356,FV03c_ACT_OSW,BOOL,Coal Valve 3 Control Gate Actuator Open Limit Switch,1
-RLF_SUB_PLC,%I00159,%R01357,400357,FV03c_ACT_CSW,BOOL,Coal Valve 3 Control Gate Actuator Closed Limit Switch,0
-RLF_SUB_PLC,%I00161,%R01358,400358,FV04a_CTRP,BOOL,Coal Valve 4 Vibrating Chute a Control Power Available,1
-RLF_SUB_PLC,%I00162,%R01359,400359,FV04a_MTR_CB,BOOL,Coal Valve 4 Vibrating Chute a Motor Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00163,%R01360,400360,FV04a_MTR_CONT,BOOL,Coal Valve 4 Vibrating Chute a Motor Contactor Closed,0
-RLF_SUB_PLC,%I00164,%R01361,400361,FV04a_MTR_ELR,BOOL,Coal Valve 4 Vibrating Chute a Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00165,%R01362,400362,FV04a_MTR_TOL,BOOL,Coal Valve 4 Vibrating Chute a Motor Thermal Overload,0
-RLF_SUB_PLC,%I00166,%R01363,400363,FV04a_MTR_THM,BOOL,Coal Valve 4 Vibrating Chute a Motor Thermistor,0
-RLF_SUB_PLC,%I00167,%R01364,400364,FV04_LCU_STRT,BOOL,Coal Valve 4 Local Control Unit Vibrating Drives Local Start,0
-RLF_SUB_PLC,%I00168,%R01365,400365,FV04a_LCU_ISO,BOOL,Coal Valve 4 Vibrating Chute a Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00169,%R01366,400366,FV04_LCU_ESP,BOOL,Coal Valve 4 Local Control Unit Emergency Stop,0
-RLF_SUB_PLC,%I00172,%R01367,400367,FV04b_CTRP,BOOL,Coal Valve 4 Vibrating Chute b Control Power Available,1
-RLF_SUB_PLC,%I00173,%R01368,400368,FV04b_MTR_CB,BOOL,Coal Valve 4 Vibrating Chute b Motor Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00174,%R01369,400369,FV04b_MTR_CONT,BOOL,Coal Valve 4 Vibrating Chute b Motor Contactor Closed,0
-RLF_SUB_PLC,%I00175,%R01370,400370,FV04b_MTR_ELR,BOOL,Coal Valve 4 Vibrating Chute b Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00176,%R01371,400371,FV04b_MTR_TOL,BOOL,Coal Valve 4 Vibrating Chute b Motor Thermal Overload,0
-RLF_SUB_PLC,%I00177,%R01372,400372,FV04b_MTR_THM,BOOL,Coal Valve 4 Vibrating Chute b Motor Thermistor,0
-RLF_SUB_PLC,%I00178,%R01373,400373,FV04b_LCU_ISO,BOOL,Coal Valve 4 Vibrating Chute b Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00181,%R01374,400374,FV04c_CTRP,BOOL,Coal Valve 4 Control Gate Control Power Available,1
-RLF_SUB_PLC,%I00182,%R01375,400375,FV04c_ACT_CB,BOOL,Coal Valve 4 Control Gate Actuator Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00183,%R01376,400376,FV04c_ACT_OPNC,BOOL,Coal Valve 4 Control Gate Actuator Opening Contactor Closed,0
-RLF_SUB_PLC,%I00184,%R01377,400377,FV04c_ACT_CLSC,BOOL,Coal Valve 4 Control Gate Actuator Closing Contactor Closed,0
-RLF_SUB_PLC,%I00185,%R01378,400378,FV04c_ACT_ELR,BOOL,Coal Valve 4 Control Gate Actuator Earth Leakage Relay,1
-RLF_SUB_PLC,%I00186,%R01379,400379,FV04c_ACT_EOL,BOOL,Coal Valve 4 Control Gate Actuator Electronic Overload,1
-RLF_SUB_PLC,%I00187,%R01380,400380,FV04c_LCU_OPN,BOOL,Coal Valve 4 Control Gate Local Control Unit Open,0
-RLF_SUB_PLC,%I00188,%R01381,400381,FV04c_LCU_CLS,BOOL,Coal Valve 4 Control Gate Local Control Unit Closed,0
-RLF_SUB_PLC,%I00189,%R01382,400382,FV04c_LCU_ISO,BOOL,Coal Valve 4 Control Gate Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00190,%R01383,400383,FV04c_ACT_OSW,BOOL,Coal Valve 4 Control Gate Actuator Open Limit Switch,1
-RLF_SUB_PLC,%I00191,%R01384,400384,FV04c_ACT_CSW,BOOL,Coal Valve 4 Control Gate Actuator Closed Limit Switch,0
-RLF_SUB_PLC,%I00193,%R01385,400385,FV01d_CTRP,BOOL,Coal Valve 1 Cutoff Gate Control Power Available,1
-RLF_SUB_PLC,%I00194,%R01386,400386,FV01d_ACT_CB,BOOL,Coal Valve 1 Cutoff Gate Actuator Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00195,%R01387,400387,FV01d_ACT_OPNC,BOOL,Coal Valve 1 Cutoff Gate Actuator Opening Contactor Closed,0
-RLF_SUB_PLC,%I00196,%R01388,400388,FV01d_ACT_CLSC,BOOL,Coal Valve 1 Cutoff Gate Actuator Closing Contactor Closed,0
-RLF_SUB_PLC,%I00197,%R01389,400389,FV01d_ACT_ELR,BOOL,Coal Valve 1 Cutoff Gate Actuator Earth Leakage Relay,1
-RLF_SUB_PLC,%I00198,%R01390,400390,FV01d_ACT_TOL,BOOL,Coal Valve 1 Cutoff Gate Actuator Thermal Overload,1
-RLF_SUB_PLC,%I00199,%R01391,400391,FV01d_LCU_OPN,BOOL,Coal Valve 1 Cutoff Gate Local Control Unit Open,0
-RLF_SUB_PLC,%I00200,%R01392,400392,FV01d_LCU_CLS,BOOL,Coal Valve 1 Cutoff Gate Local Control Unit Closed,0
-RLF_SUB_PLC,%I00201,%R01393,400393,FV01d_LCU_ISO,BOOL,Coal Valve 1 Cutoff Gate Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00202,%R01394,400394,FV01d_ACT_CSW,BOOL,Coal Valve 1 Cutoff Gate Actuator Closed Limit Switch,0
-RLF_SUB_PLC,%I00203,%R01395,400395,FV01d_ACT_OSW,BOOL,Coal Valve 1 Cutoff Gate Actuator Open Limit Switch,1
-RLF_SUB_PLC,%I00204,%R01396,400396,FV01_STV,BOOL,Coal Valve 1 Flow Starved,0
-RLF_SUB_PLC,%I00209,%R01397,400397,FV02d_CTRP,BOOL,Coal Valve 2 Cutoff Gate Control Power Available,1
-RLF_SUB_PLC,%I00210,%R01398,400398,FV02d_ACT_CB,BOOL,Coal Valve 2 Cutoff Gate Actuator Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00211,%R01399,400399,FV02d_ACT_OPNC,BOOL,Coal Valve 2 Cutoff Gate Actuator Opening Contactor Closed,0
-RLF_SUB_PLC,%I00212,%R01400,400400,FV02d_ACT_CLSC,BOOL,Coal Valve 2 Cutoff Gate Actuator Closing Contactor Closed,0
-RLF_SUB_PLC,%I00213,%R01401,400401,FV02d_ACT_ELR,BOOL,Coal Valve 2 Cutoff Gate Actuator Earth Leakage Relay,1
-RLF_SUB_PLC,%I00214,%R01402,400402,FV02d_ACT_TOL,BOOL,Coal Valve 2 Cutoff Gate Actuator Thermal Overload,1
-RLF_SUB_PLC,%I00215,%R01403,400403,FV02d_LCU_OPN,BOOL,Coal Valve 2 Cutoff Gate Local Control Unit Open,0
-RLF_SUB_PLC,%I00216,%R01404,400404,FV02d_LCU_CLS,BOOL,Coal Valve 2 Cutoff Gate Local Control Unit Closed,0
-RLF_SUB_PLC,%I00217,%R01405,400405,FV02d_LCU_ISO,BOOL,Coal Valve 2 Local Control Unit Cutoff Gate Isolator Open,1
-RLF_SUB_PLC,%I00218,%R01406,400406,FV02d_ACT_CSW,BOOL,Coal Valve 2 Cutoff Gate Actuator Closed Limit Switch,0
-RLF_SUB_PLC,%I00219,%R01407,400407,FV02d_ACT_OSW,BOOL,Coal Valve 2 Cutoff Gate Actuator Open Limit Switch,1
-RLF_SUB_PLC,%I00220,%R01408,400408,FV02_STV,BOOL,Coal Valve 2 Flow Starved,0
-RLF_SUB_PLC,%I00225,%R01409,400409,FV03d_CTRP,BOOL,Coal Valve 3 Cutoff Gate Control Power Available,1
-RLF_SUB_PLC,%I00226,%R01410,400410,FV03d_ACT_CB,BOOL,Coal Valve 3 Cutoff Gate Actuator Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00227,%R01411,400411,FV03d_ACT_OPNC,BOOL,Coal Valve 3 Cutoff Gate Actuator Opening Contactor Closed,0
-RLF_SUB_PLC,%I00228,%R01412,400412,FV03d_ACT_CLSC,BOOL,Coal Valve 3 Cutoff Gate Actuator Closing Contactor Closed,0
-RLF_SUB_PLC,%I00229,%R01413,400413,FV03d_ACT_ELR,BOOL,Coal Valve 3 Cutoff Gate Actuator Earth Leakage Relay,1
-RLF_SUB_PLC,%I00230,%R01414,400414,FV03d_ACT_TOL,BOOL,Coal Valve 3 Cutoff Gate Actuator Thermal Overload,1
-RLF_SUB_PLC,%I00231,%R01415,400415,FV03d_LCU_OPN,BOOL,Coal Valve 3 Cutoff Gate Local Control Unit Open,0
-RLF_SUB_PLC,%I00232,%R01416,400416,FV03d_LCU_CLS,BOOL,Coal Valve 3 Cutoff Gate Local Control Unit Closed,0
-RLF_SUB_PLC,%I00233,%R01417,400417,FV03d_LCU_ISO,BOOL,Coal Valve 3 Cutoff Gate Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00234,%R01418,400418,FV03d_ACT_CSW,BOOL,Coal Valve 3 Cutoff Gate Actuator Closed Limit Switch,0
-RLF_SUB_PLC,%I00235,%R01419,400419,FV03d_ACT_OSW,BOOL,Coal Valve 3 Cutoff Gate Actuator Open Limit Switch,1
-RLF_SUB_PLC,%I00236,%R01420,400420,FV03_STV,BOOL,Coal Valve 3 Flow Starved,0
-RLF_SUB_PLC,%I00241,%R01421,400421,FV04d_CTRP,BOOL,Coal Valve 4 Cutoff Gate Control Power Available,1
-RLF_SUB_PLC,%I00242,%R01422,400422,FV04d_ACT_CB,BOOL,Coal Valve 4 Cutoff Gate Actuator Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00243,%R01423,400423,FV04d_ACT_OPNC,BOOL,Coal Valve 4 Cutoff Gate Actuator Opening Contactor Closed,0
-RLF_SUB_PLC,%I00244,%R01424,400424,FV04d_ACT_CLSC,BOOL,Coal Valve 4 Cutoff Gate Actuator Closing Contactor Closed,0
-RLF_SUB_PLC,%I00245,%R01425,400425,FV04d_ACT_ELR,BOOL,Coal Valve 4 Cutoff Gate Actuator Earth Leakage Relay,1
-RLF_SUB_PLC,%I00246,%R01426,400426,FV04d_ACT_TOL,BOOL,Coal Valve 4 Cutoff Gate Actuator Thermal Overload,1
-RLF_SUB_PLC,%I00247,%R01427,400427,FV04d_LCU_OPN,BOOL,Coal Valve 4 Cutoff Gate Local Control Unit Open,0
-RLF_SUB_PLC,%I00248,%R01428,400428,FV04d_LCU_CLS,BOOL,Coal Valve 4 Cutoff Gate Local Control Unit Closed,0
-RLF_SUB_PLC,%I00249,%R01429,400429,FV04d_LCU_ISO,BOOL,Coal Valve 4 Cutoff Gate Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00250,%R01430,400430,FV04d_ACT_CSW,BOOL,Coal Valve 5 Cutoff Gate Actuator Closed Limit Switch,0
-RLF_SUB_PLC,%I00251,%R01431,400431,FV04d_ACT_OSW,BOOL,Coal Valve 4 Cutoff Gate Actuator Open Limit Switch,1
-RLF_SUB_PLC,%I00252,%R01432,400432,FV04_STV,BOOL,Coal Valve 4 Flow Starved,0
-RLF_SUB_PLC,%I00256,%R01433,400433,RLF_FIP_GAS_ISOLATED,BOOL,Gas Alarm isolated at Fire Indication Panel,0
-RLF_SUB_PLC,%I00270,%R01434,400434,BN02_CTRP,BOOL,Bin Dust Collector Control Power Available,1
-RLF_SUB_PLC,%I00271,%R01435,400435,BN02_MTR_CB,BOOL,Bin Dust Collector Motor Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00272,%R01436,400436,BN02_MTR_CONT,BOOL,Bin Dust Collector Motor Contactor Closed,0
-RLF_SUB_PLC,%I00273,%R01437,400437,BN02_MTR_ELR,BOOL,Bin Dust Collector Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00274,%R01438,400438,BN02_MTR_TOL,BOOL,Bin Dust Collector Motor Thermal Overload,0
-RLF_SUB_PLC,%I00275,%R01439,400439,BN02_MTR_THM,BOOL,Bin Dust Collector Motor Thermistor,0
-RLF_SUB_PLC,%I00276,%R01440,400440,BN02_LCU_STRT,BOOL,Bin Dust Collector Local Control Unit Start,0
-RLF_SUB_PLC,%I00277,%R01441,400441,BN02_LCU_NISO,BOOL,Bin Dust Collector Local Control Unit Not Isolated,0
-RLF_SUB_PLC,%I00278,%R01442,400442,BN02_LCU_ESP,BOOL,Bin Dust Collector Local Control Unit Emergency Stop,0
-RLF_SUB_PLC,%I00281,%R01443,400443,SA02_CTRP,BOOL,Sample Plant Control Power Available,1
-RLF_SUB_PLC,%I00282,%R01444,400444,SA02_ELR,BOOL,Sample Plant Earth Leakage Relay,1
-RLF_SUB_PLC,%I00283,%R01445,400445,SA02_ESP1,BOOL,Sample Plant Emergency Stop 1,0
-RLF_SUB_PLC,%I00284,%R01446,400446,SA02_ESP2,BOOL,Sample Plant Emergency Stop 2,0
-RLF_SUB_PLC,%I00285,%R01447,400447,SA02_ESP3A,BOOL,Sample Plant Emergency Stop 3A,0
-RLF_SUB_PLC,%I00286,%R01448,400448,SA02_ESP3B,BOOL,Sample Plant Emergency Stop 3B,0
-RLF_SUB_PLC,%I00289,%R01449,400449,SA02a_MTR_CB,BOOL,Sample Plant Primary Sampler Motor Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00290,%R01450,400450,SA02a_MTR_CONT,BOOL,Sample Plant Primary Sampler Motor Contactor Closed,0
-RLF_SUB_PLC,%I00291,%R01451,400451,SA02a_MTR_TOL,BOOL,Sample Plant Primary Sampler Motor Thermal Overload,0
-RLF_SUB_PLC,%I00293,%R01452,400452,SA02a_MTR_THM,BOOL,Sample Plant Primary Sampler Motor Thermistor,0
-RLF_SUB_PLC,%I00294,%R01453,400453,SA02a_LCU_STRT,BOOL,Sample Plant Primary Sampler Local Control Unit Start,0
-RLF_SUB_PLC,%I00295,%R01454,400454,SA02a_LCU_ISO,BOOL,Sample Plant Primary Sampler Local Control Unit Isolator Open,0
-RLF_SUB_PLC,%I00297,%R01455,400455,SA02a_OBL,BOOL,Sample Plant Primary Sampler Over Belt Limit (0=Overbelt),1
-RLF_SUB_PLC,%I00306,%R01456,400456,CV05_MTR_CB,BOOL,Sample Plant Conveyor 5 Motor Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00307,%R01457,400457,CV05_MTR_CONT,BOOL,Sample Plant Conveyor 5 Motor Contactor Closed,0
-RLF_SUB_PLC,%I00308,%R01458,400458,CV05_MTR_TOL,BOOL,Sample Plant Conveyor 5 Motor Thermal Overload,0
-RLF_SUB_PLC,%I00309,%R01459,400459,CV05_LCU_STRT,BOOL,Sample Plant Conveyor 5 Local Control Unit Start,0
-RLF_SUB_PLC,%I00310,%R01460,400460,CV05_LCU_ISO,BOOL,Sample Plant Conveyor 5 Local Control Unit Isolator Open,0
-RLF_SUB_PLC,%I00311,%R01461,400461,CV05_PULLSW1A,BOOL,Sample Plant Conveyor 5 Pullwire Switch,0
-RLF_SUB_PLC,%I00312,%R01462,400462,CV05_PULLSW1B,BOOL,Sample Plant Conveyor 5 Pullwire Switch,0
-RLF_SUB_PLC,%I00313,%R01463,400463,SA02b_MTR_CB,BOOL,Sample Plant Screw Feeder Motor Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00314,%R01464,400464,SA02b_MTR_FWDC,BOOL,Sample Plant Screw Feeder Motor Forward Contactor Closed,0
-RLF_SUB_PLC,%I00315,%R01465,400465,SA02b_MTR_TOL,BOOL,Sample Plant Screw Feeder Motor Thermal Overload,0
-RLF_SUB_PLC,%I00316,%R01466,400466,SA02b_LCU_STRTFWD,BOOL,Sample Plant Screw Feeder Local Control Unit Start Forward,0
-RLF_SUB_PLC,%I00317,%R01467,400467,SA02b_LCU_STRTREV,BOOL,Sample Plant Screw Feeder Local Control Unit Start Reverse,0
-RLF_SUB_PLC,%I00318,%R01468,400468,SA02b_LCU_ISO,BOOL,Sample Plant Screw Feeder Local Control Unit Isolator Open,0
-RLF_SUB_PLC,%I00320,%R01469,400469,SA02c_MTR_CB,BOOL,Sample Plant Hammer Mill Motor Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00321,%R01470,400470,SA02c_MTR_CONT,BOOL,Sample Plant Hammer Mill Motor Contactor Closed,0
-RLF_SUB_PLC,%I00322,%R01471,400471,SA02c_MTR_TOL,BOOL,Sample Plant Hammer Mill Motor Thermal Overload,0
-RLF_SUB_PLC,%I00323,%R01472,400472,SA02c_LCU_STRT,BOOL,Sample Plant Hammer Mill Local Control Unit Start,0
-RLF_SUB_PLC,%I00324,%R01473,400473,SA02c_LCU_ISO,BOOL,Sample Plant Hammer Mill Local Control Unit Isolator Open,0
-RLF_SUB_PLC,%I00326,%R01474,400474,SA02d_MTR_CB,BOOL,Sample Plant Secondary Sampler Motor Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00327,%R01475,400475,SA02d_MTR_CONT,BOOL,Sample Plant Secondary Sampler Motor Contactor Closed,0
-RLF_SUB_PLC,%I00328,%R01476,400476,SA02d_MTR_TOL,BOOL,Sample Plant Secondary Sampler Motor Thermal Overload,0
-RLF_SUB_PLC,%I00330,%R01477,400477,SA02d_LCU_STRT,BOOL,Sample Plant Secondary Sampler Local Control Unit Start,0
-RLF_SUB_PLC,%I00331,%R01478,400478,SA02d_LCU_ISO,BOOL,Sample Plant Secondary Sampler Local Control Unit Isolator Open,0
-RLF_SUB_PLC,%I00332,%R01479,400479,SA02d_PRK,BOOL,Sample Plant Secondary Sampler Parked,1
-RLF_SUB_PLC,%I00334,%R01480,400480,SA02e_MTR_CB,BOOL,Sample Plant Carousel Motor Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00335,%R01481,400481,SA02e_MTR_CONT,BOOL,Sample Plant Carousel Motor Contactor Closed,0
-RLF_SUB_PLC,%I00336,%R01482,400482,SA02e_MTR_TOL,BOOL,Sample Plant Carousel Motor Thermal Overload,0
-RLF_SUB_PLC,%I00338,%R01483,400483,SA02e_LCU_STRT,BOOL,Sample Plant Carousel Local Control Unit Start,0
-RLF_SUB_PLC,%I00339,%R01484,400484,SA02e_LCU_ISO,BOOL,Sample Plant Carousel Local Control Unit Isolator Open,0
-RLF_SUB_PLC,%I00340,%R01485,400485,SA02e_SW_CAN,BOOL,Sample Plant Carousel Sample Can In Position Limit,0
-RLF_SUB_PLC,%I00341,%R01486,400486,SA02e_SW_FIRSTCAN,BOOL,Sample Plant Carousel Sample First Can In Position Limit,1
-RLF_SUB_PLC,%I00342,%R01487,400487,SA02e_RESET,BOOL,Sample Plant Carousel Reset,0
-RLF_SUB_PLC,%I00343,%R01488,400488,SA02e_DOOR_LIM,BOOL,Sample Plant Carousel Access Door Limit,0
-RLF_SUB_PLC,%I00352,%R01489,400489,CV04_WGH07_FLT,BOOL,Conveyor 7 Belt Weigher Fault,1
-RLF_SUB_PLC,%I00353,%R01490,400490,RLF_SUB_MCCCB1_CLD,BOOL,Substation MCC Incomer Closed,1
-RLF_SUB_PLC,%I00354,%R01491,400491,RLF_SUB_MCCCB1_POSITN,BOOL,Substation MCC Incomer Operating Position,1
-RLF_SUB_PLC,%I00355,%R01492,400492,RLF_SUB_MCCCB1_ELR,BOOL,Substation MCC Incomer Earth Leakage Relay,1
-RLF_SUB_PLC,%I00356,%R01493,400493,RLF_SUB_PM_KWHRS,BOOL,Substation Power Meter Kilowatt Hours,0
-RLF_SUB_PLC,%I00357,%R01494,400494,RLF_SUB_ESP1,BOOL,Substation Emergency Stop 1,0
-RLF_SUB_PLC,%I00358,%R01495,400495,RLF_SUB_ESP2,BOOL,Substation Emergency Stop 2,0
-RLF_SUB_PLC,%I00359,%R01496,400496,TX04_TMPHIGH,BOOL,Substation Transformer 4 Temperature High,0
-RLF_SUB_PLC,%I00360,%R01497,400497,TX04_PRHIGH,BOOL,Substation Transformer 4 Pressure High,0
-RLF_SUB_PLC,%I00361,%R01498,400498,TX04_VNT_OPN,BOOL,Substation Transformer 4 Relief Vent Open,0
-RLF_SUB_PLC,%I00362,%R01499,400499,RLF_CTRL_ROOM_ESP,BOOL,Rail Load Out Facility Control Room Emergency Stop,0
-RLF_SUB_PLC,%I00363,%R01500,400500,RLF_SUB_UPS_BATTLOW,BOOL,Substation UPS Battery Low Battery,0
-RLF_SUB_PLC,%I00364,%R01501,400501,RLF_SUB_FIRE_ALARM,BOOL,Substation Fire Panel Fire Alarm,0
-RLF_SUB_PLC,%I00365,%R01502,400502,RLF_SUB_FIRE_FLT,BOOL,Substation Fire Panel Fault,0
-RLF_SUB_PLC,%I00366,%R01503,400503,RLF_SUB_UPS_BATTON,BOOL,Substation Uninterruptible Power Supply Battery On,1
-RLF_SUB_PLC,%I00367,%R01504,400504,RLF_SUB_UPS_BYP,BOOL,Substation Uninterruptible Power Supply Bypass,1
-RLF_SUB_PLC,%I00368,%R01505,400505,RLF_SUB_UPS_FLT,BOOL,Substation Uninterruptible Power Supply Fault,1
-RLF_SUB_PLC,%I00369,%R01506,400506,BN02_PRLOW,BOOL,Compressor Pressure Low,0
-RLF_SUB_PLC,%I00370,%R01507,400507,CV04_BIN_LVLHI,BOOL,Conveyor 4 Bin Level High Switch,1
-RLF_SUB_PLC,%I00371,%R01508,400508,CV04_WGH05_FLT,BOOL,Conveyor 4 Belt Weigher 5 Fault,1
-RLF_SUB_PLC,%I00372,%R01509,400509,CV04_WGH05_INC,BOOL,Conveyor 4 Belt Weigher Increment Tonnes Pulse,0
-RLF_SUB_PLC,%I00373,%R01510,400510,CV04_WGH04_FLT,BOOL,Conveyor 4 Belt Weigher 3 Fault,1
-RLF_SUB_PLC,%I00374,%R01511,400511,CV04_WGH04_INC,BOOL,Conveyor 4 Belt Weigher Increment Tonnes Pulse,0
-RLF_SUB_PLC,%I00375,%R01512,400512,CV04_WGH03_FLT,BOOL,Conveyor 4 Belt Weigher 4 Fault,1
-RLF_SUB_PLC,%I00376,%R01513,400513,CV04_WGH03_INC,BOOL,Conveyor 4 Belt Weigher Increment Tonnes Pulse,0
-RLF_SUB_PLC,%I00377,%R01514,400514,CV04_WGH02_FLT,BOOL,Conveyor 4 Belt Weigher Fault,1
-RLF_SUB_PLC,%I00378,%R01515,400515,CV04_WGH02_INC,BOOL,Conveyor 4 Belt Weigher Increment 10T Pulse,0
-RLF_SUB_PLC,%I00379,%R01516,400516,RLF_SUB_TNLFIRE,BOOL,Tunnel Fire Alarm,0
-RLF_SUB_PLC,%I00380,%R01517,400517,RLF_SUB_MAINFIP_FLT,BOOL,Main Fire Panel Fault,0
-RLF_SUB_PLC,%I00381,%R01518,400518,CV04_WGH07_INC,BOOL,Conveyor 4 Belt Weigher Increment Tonnes Pulse,0
-RLF_SUB_PLC,%I00382,%R01519,400519,RLF_SUB2_ESP1,BOOL,RLF VSD Sub E-Stop1,0
-RLF_SUB_PLC,%I00383,%R01520,400520,RLF_SUB2_ESP2,BOOL,RLF VSD Sub E-Stop2,0
-RLF_SUB_PLC,%I00384,%R01521,400521,RLF_CTRL_ROOM_ESP2,BOOL,Rail Load Out Facility Control Room Emergency Stop 2,0
-RLF_SUB_PLC,%I00385,%R01522,400522,FV05a_CTRP,BOOL,Coal Valve 5 Vibrating Chute a Control Power Available,1
-RLF_SUB_PLC,%I00386,%R01523,400523,FV05a_MTR_CB,BOOL,Coal Valve 5 Vibrating Chute a Motor Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00387,%R01524,400524,FV05a_MTR_CONT,BOOL,Coal Valve 5 Vibrating Chute a Motor Contactor Closed,0
-RLF_SUB_PLC,%I00388,%R01525,400525,FV05a_MTR_ELR,BOOL,Coal Valve 5 Vibrating Chute a Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00389,%R01526,400526,FV05a_MTR_TOL,BOOL,Coal Valve 5 Vibrating Chute a Motor Thermal Overload,0
-RLF_SUB_PLC,%I00390,%R01527,400527,FV05a_MTR_THM,BOOL,Coal Valve 5 Vibrating Chute a Motor Thermistor,0
-RLF_SUB_PLC,%I00391,%R01528,400528,FV05_LCU_STRT,BOOL,Coal Valve 5 Local Control Unit Vibrating Drives Local Start,0
-RLF_SUB_PLC,%I00392,%R01529,400529,FV05a_LCU_ISO,BOOL,Coal Valve 5 Vibrating Chute a Local Control Unit Isolator Closed,1
-RLF_SUB_PLC,%I00393,%R01530,400530,FV05_LCU_ESP,BOOL,Coal Valve 5 Local Control Unit Emergency Stop,0
-RLF_SUB_PLC,%I00396,%R01531,400531,FV05b_CTRP,BOOL,Coal Valve 5 Vibrating Chute b Control Power Available,1
-RLF_SUB_PLC,%I00397,%R01532,400532,FV05b_MTR_CB,BOOL,Coal Valve 5 Vibrating Chute b Motor Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00398,%R01533,400533,FV05b_MTR_CONT,BOOL,Coal Valve 5 Vibrating Chute b Motor Contactor Closed,0
-RLF_SUB_PLC,%I00399,%R01534,400534,FV05b_MTR_ELR,BOOL,Coal Valve 5 Vibrating Chute b Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00400,%R01535,400535,FV05b_MTR_TOL,BOOL,Coal Valve 5 Vibrating Chute b Motor Thermal Overload,0
-RLF_SUB_PLC,%I00401,%R01536,400536,FV05b_MTR_THM,BOOL,Coal Valve 5 Vibrating Chute b Motor Thermistor,0
-RLF_SUB_PLC,%I00402,%R01537,400537,FV05b_LCU_ISO,BOOL,Coal Valve 5 Vibrating Chute b Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00405,%R01538,400538,FV05c_CTRP,BOOL,Coal Valve 5 Control Gate Control Power Available,1
-RLF_SUB_PLC,%I00406,%R01539,400539,FV05c_ACT_CB,BOOL,Coal Valve 5 Control Gate Actuator Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00407,%R01540,400540,FV05c_ACT_OPNC,BOOL,Coal Valve 5 Control Gate Actuator Opening Contactor Closed,0
-RLF_SUB_PLC,%I00408,%R01541,400541,FV05c_ACT_CLSC,BOOL,Coal Valve 5 Control Gate Actuator Closing Contactor Closed,0
-RLF_SUB_PLC,%I00409,%R01542,400542,FV05c_ACT_ELR,BOOL,Coal Valve 5 Control Gate Actuator Earth Leakage Relay,1
-RLF_SUB_PLC,%I00410,%R01543,400543,FV05c_ACT_EOL,BOOL,Coal Valve 5 Control Gate Actuator Electronic Overload,1
-RLF_SUB_PLC,%I00411,%R01544,400544,FV05c_LCU_OPN,BOOL,Coal Valve 5 Control Gate Local Control Unit Open,0
-RLF_SUB_PLC,%I00412,%R01545,400545,FV05c_LCU_CLS,BOOL,Coal Valve 5 Control Gate Local Control Unit Closed,0
-RLF_SUB_PLC,%I00413,%R01546,400546,FV05c_LCU_ISO,BOOL,Coal Valve 5 Control Gate Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00414,%R01547,400547,FV05c_ACT_OSW,BOOL,Coal Valve 5 Control Gate Actuator Open Limit Switch,1
-RLF_SUB_PLC,%I00415,%R01548,400548,FV05c_ACT_CSW,BOOL,Coal Valve 5 Control Gate Actuator Closed Limit Switch,0
-RLF_SUB_PLC,%I00417,%R01549,400549,FV05d_CTRP,BOOL,Coal Valve 5 Cutoff Gate Control Power Available,1
-RLF_SUB_PLC,%I00418,%R01550,400550,FV05d_ACT_CB,BOOL,Coal Valve 5 Cutoff Gate Actuator Circuit Breaker Closed,0
-RLF_SUB_PLC,%I00419,%R01551,400551,FV05d_ACT_OPNC,BOOL,Coal Valve 5 Cutoff Gate Actuator Opening Contactor Closed,0
-RLF_SUB_PLC,%I00420,%R01552,400552,FV05d_ACT_CLSC,BOOL,Coal Valve 5 Cutoff Gate Actuator Closing Contactor Closed,0
-RLF_SUB_PLC,%I00421,%R01553,400553,FV05d_ACT_ELR,BOOL,Coal Valve 5 Cutoff Gate Actuator Earth Leakage Relay,1
-RLF_SUB_PLC,%I00422,%R01554,400554,FV05d_ACT_TOL,BOOL,Coal Valve 5 Cutoff Gate Actuator Thermal Overload,1
-RLF_SUB_PLC,%I00423,%R01555,400555,FV05d_LCU_OPN,BOOL,Coal Valve 5 Cutoff Gate Local Control Unit Open,0
-RLF_SUB_PLC,%I00424,%R01556,400556,FV05d_LCU_CLS,BOOL,Coal Valve 5 Cutoff Gate Local Control Unit Closed,0
-RLF_SUB_PLC,%I00425,%R01557,400557,FV05d_LCU_ISO,BOOL,Coal Valve 5 Cutoff Gate Local Control Unit Isolator Open,1
-RLF_SUB_PLC,%I00426,%R01558,400558,FV05d_ACT_CSW,BOOL,Coal Valve 5 Cutoff Gate Actuator Closed Limit Switch,0
-RLF_SUB_PLC,%I00427,%R01559,400559,FV05d_ACT_OSW,BOOL,Coal Valve 5 Cutoff Gate Actuator Open Limit Switch,1
-RLF_SUB_PLC,%I00428,%R01560,400560,FV05_STV,BOOL,Coal Valve 5 Flow Starved,0
-RLF_SUB_PLC,%I00429,%R01561,400561,FV05D_ACT_OOTSW,BOOL,Coal Valve 5 Cutoff Gate Open Overtravel Switch,1
-RLF_SUB_PLC,%I00430,%R01562,400562,FV05D_ACT_COTSW,BOOL,,1
-RLF_SUB_PLC,%I00431,%R01563,400563,FN01_CTRP,BOOL,Vent Fan Control Power Available,1
-RLF_SUB_PLC,%I00432,%R01564,400564,FN01_MTR_CB,BOOL,Vent Fan Drive Motor Circuit Breaker Closed,1
-RLF_SUB_PLC,%I00433,%R01565,400565,FN01_MTR_CONT,BOOL,Vent Fan Drive Motor Contactor Closed,1
-RLF_SUB_PLC,%I00434,%R01566,400566,FN01_MTR_ELR,BOOL,Vent Fan Drive Motor Earth Leakage Relay,1
-RLF_SUB_PLC,%I00435,%R01567,400567,FN01_MTR_TOL,BOOL,Vent Fan Drive Motor Thermal Overload,0
-RLF_SUB_PLC,%I00436,%R01568,400568,FN01_LCU_STRT,BOOL,Vent Fan Local Control Unit Start,0
-RLF_SUB_PLC,%I00437,%R01569,400569,FN01_LCU_ISO,BOOL,Vent Fan Local Control Unit Isolator Closed,1
-RLF_SUB_PLC,%I00438,%R01570,400570,FN01_LCU_ESP,BOOL,Vent Fan Local Control Unit Emergency Stop,0
-RLF_SUB_PLC,%I00439,%R01571,400571,FN01_FLWLOW,BOOL,Vent Fan Flow Low,1
-RLF_SUB_PLC,%I02013,%R01572,400572,ETH_LAN_OK,BOOL,LAN OK,1
-RLF_SUB_PLC,%I02016,%R01573,400573,ETH_IFACE_OK,BOOL,LAN Interface OK,1
-RLF_SUB_PLC,%I02017,%R01574,400574,ETH_CH1_OPN,BOOL,Ethernet Channel 1 Open,1
-RLF_SUB_PLC,%I02019,%R01575,400575,ETH_CH2_OPN,BOOL,Ethernet Channel 2 Open,0
-RLF_SUB_PLC,%I02021,%R01576,400576,ETH_CH3_OPN,BOOL,Ethernet Channel 3 Open,0
-RLF_SUB_PLC,%I02023,%R01577,400577,ETH_CH4_OPN,BOOL,Ethernet Channel 4 Open,0
-RLF_SUB_PLC,%I02121,%R01578,400578,aatempdiag1,BOOL,,0
-RLF_SUB_PLC,%I02121,%R01579,400579,aatempdiag1[00],BOOL,,0
-RLF_SUB_PLC,%I02122,%R01580,400580,aatempdiag1[01],BOOL,,0
-RLF_SUB_PLC,%I02123,%R01581,400581,aatempdiag1[02],BOOL,,0
-RLF_SUB_PLC,%I02124,%R01582,400582,aatempdiag1[03],BOOL,,0
-RLF_SUB_PLC,%I02125,%R01583,400583,aatempdiag1[04],BOOL,,0
-RLF_SUB_PLC,%I02126,%R01584,400584,aatempdiag1[05],BOOL,,0
-RLF_SUB_PLC,%I02127,%R01585,400585,aatempdiag1[06],BOOL,,0
-RLF_SUB_PLC,%I02128,%R01586,400586,aatempdiag1[07],BOOL,,0
-RLF_SUB_PLC,%I02129,%R01587,400587,aatempdiag1[08],BOOL,,0
-RLF_SUB_PLC,%I02130,%R01588,400588,aatempdiag1[09],BOOL,,0
-RLF_SUB_PLC,%I02131,%R01589,400589,aatempdiag1[10],BOOL,,0
-RLF_SUB_PLC,%I02132,%R01590,400590,aatempdiag1[11],BOOL,,0
-RLF_SUB_PLC,%I02133,%R01591,400591,aatempdiag1[12],BOOL,,0
-RLF_SUB_PLC,%I02134,%R01592,400592,aatempdiag1[13],BOOL,,0
-RLF_SUB_PLC,%I02135,%R01593,400593,aatempdiag1[14],BOOL,,0
-RLF_SUB_PLC,%I02136,%R01594,400594,aatempdiag1[15],BOOL,,0
-RLF_SUB_PLC,%I02137,%R01595,400595,aatempdiag1[16],BOOL,,0
-RLF_SUB_PLC,%I02138,%R01596,400596,aatempdiag1[17],BOOL,,0
-RLF_SUB_PLC,%I02139,%R01597,400597,aatempdiag1[18],BOOL,,0
-RLF_SUB_PLC,%I02140,%R01598,400598,aatempdiag1[19],BOOL,,0
-RLF_SUB_PLC,%I02141,%R01599,400599,aatempdiag1[20],BOOL,,0
-RLF_SUB_PLC,%I02142,%R01600,400600,aatempdiag1[21],BOOL,,0
-RLF_SUB_PLC,%I02143,%R01601,400601,aatempdiag1[22],BOOL,,0
-RLF_SUB_PLC,%I02144,%R01602,400602,aatempdiag1[23],BOOL,,0
-RLF_SUB_PLC,%I02145,%R01603,400603,aatempdiag1[24],BOOL,,0
-RLF_SUB_PLC,%I02146,%R01604,400604,aatempdiag1[25],BOOL,,0
-RLF_SUB_PLC,%I02147,%R01605,400605,aatempdiag1[26],BOOL,,0
-RLF_SUB_PLC,%I02148,%R01606,400606,aatempdiag1[27],BOOL,,0
-RLF_SUB_PLC,%I02149,%R01607,400607,aatempdiag1[28],BOOL,,0
-RLF_SUB_PLC,%I02150,%R01608,400608,aatempdiag1[29],BOOL,,0
-RLF_SUB_PLC,%I02151,%R01609,400609,aatempdiag1[30],BOOL,,0
-RLF_SUB_PLC,%I02152,%R01610,400610,aatempdiag1[31],BOOL,,0
-RLF_SUB_PLC,%I02641,%R01611,400611,aatempstat,BOOL,,0
-RLF_SUB_PLC,%I02641,%R01612,400612,aatempstat[00],BOOL,,0
-RLF_SUB_PLC,%I02642,%R01613,400613,aatempstat[01],BOOL,,0
-RLF_SUB_PLC,%I02643,%R01614,400614,aatempstat[02],BOOL,,0
-RLF_SUB_PLC,%I02644,%R01615,400615,aatempstat[03],BOOL,,0
-RLF_SUB_PLC,%I02645,%R01616,400616,aatempstat[04],BOOL,,0
-RLF_SUB_PLC,%I02646,%R01617,400617,aatempstat[05],BOOL,,0
-RLF_SUB_PLC,%I02647,%R01618,400618,aatempstat[06],BOOL,,0
-RLF_SUB_PLC,%I02648,%R01619,400619,aatempstat[07],BOOL,,0
-RLF_SUB_PLC,%I02649,%R01620,400620,aatempstat[08],BOOL,,0
-RLF_SUB_PLC,%I02650,%R01621,400621,aatempstat[09],BOOL,,0
-RLF_SUB_PLC,%I02651,%R01622,400622,aatempstat[10],BOOL,,0
-RLF_SUB_PLC,%I02652,%R01623,400623,aatempstat[11],BOOL,,0
-RLF_SUB_PLC,%I02653,%R01624,400624,aatempstat[12],BOOL,,0
-RLF_SUB_PLC,%I02654,%R01625,400625,aatempstat[13],BOOL,,0
-RLF_SUB_PLC,%I02655,%R01626,400626,aatempstat[14],BOOL,,0
-RLF_SUB_PLC,%I02656,%R01627,400627,aatempstat[15],BOOL,,0
-RLF_SUB_PLC,%I02657,%R01628,400628,aatempstat[16],BOOL,,0
-RLF_SUB_PLC,%I02658,%R01629,400629,aatempstat[17],BOOL,,0
-RLF_SUB_PLC,%I02659,%R01630,400630,aatempstat[18],BOOL,,0
-RLF_SUB_PLC,%I02660,%R01631,400631,aatempstat[19],BOOL,,0
-RLF_SUB_PLC,%I02661,%R01632,400632,aatempstat[20],BOOL,,0
-RLF_SUB_PLC,%I02662,%R01633,400633,aatempstat[21],BOOL,,0
-RLF_SUB_PLC,%I02663,%R01634,400634,aatempstat[22],BOOL,,0
-RLF_SUB_PLC,%I02664,%R01635,400635,aatempstat[23],BOOL,,0
-RLF_SUB_PLC,%I02665,%R01636,400636,aatempstat[24],BOOL,,0
-RLF_SUB_PLC,%I02666,%R01637,400637,aatempstat[25],BOOL,,0
-RLF_SUB_PLC,%I02667,%R01638,400638,aatempstat[26],BOOL,,0
-RLF_SUB_PLC,%I02668,%R01639,400639,aatempstat[27],BOOL,,0
-RLF_SUB_PLC,%I02669,%R01640,400640,aatempstat[28],BOOL,,0
-RLF_SUB_PLC,%I02670,%R01641,400641,aatempstat[29],BOOL,,0
-RLF_SUB_PLC,%I02671,%R01642,400642,aatempstat[30],BOOL,,0
-RLF_SUB_PLC,%I02672,%R01643,400643,aatempstat[31],BOOL,,0
-RLF_SUB_PLC,%Q00001,%R01644,400644,CV04_MTR1_ENB,BOOL,Conveyor 4 Drive A Start Relay,0
-RLF_SUB_PLC,%Q00002,%R01645,400645,CV04_WH,BOOL,Conveyor 4 Warning Hooter,0
-RLF_SUB_PLC,%Q00003,%R01646,400646,CV04_BRK1_FWD,BOOL,Conveyor 4 Drive a Brake Forward,0
-RLF_SUB_PLC,%Q00004,%R01647,400647,CV04_BRK1_RLS,BOOL,Conveyor 4 Drive a Brake Lift Solenoid On,0
-RLF_SUB_PLC,%Q00005,%R01648,400648,CV04_MTR2_ENB,BOOL,Conveyor 4 Drive B Start Relay,0
-RLF_SUB_PLC,%Q00006,%R01649,400649,CV04_BRK2_FWD,BOOL,Conveyor 4 Drive b Brake Forward,0
-RLF_SUB_PLC,%Q00007,%R01650,400650,CV04_BRK2_RLS,BOOL,Conveyor 4 Drive b Brake Lift Solenoid,0
-RLF_SUB_PLC,%Q00008,%R01651,400651,FV01a_MTR_FWD,BOOL,Coal Valve 1 Vibrating Chute a Motor Forward,0
-RLF_SUB_PLC,%Q00009,%R01652,400652,FV01b_MTR_FWD,BOOL,Coal Valve 1 Vibrating Chute b Motor Forward,0
-RLF_SUB_PLC,%Q00010,%R01653,400653,FV01c_ACT_FWD,BOOL,Coal Valve 1 Control Gate Actuator Open/Forward,0
-RLF_SUB_PLC,%Q00011,%R01654,400654,FV01c_ACT_REV,BOOL,Coal Valve 1 Control Gate Actuator Close/Reverse,0
-RLF_SUB_PLC,%Q00012,%R01655,400655,FV01d_ACT_FWD,BOOL,Coal Valve 1 Cutoff Gate Actuator Open/Forward,0
-RLF_SUB_PLC,%Q00013,%R01656,400656,FV01d_ACT_REV,BOOL,Coal Valve 1 Cutoff Gate Actuator Close/Reverse,0
-RLF_SUB_PLC,%Q00014,%R01657,400657,FV02a_MTR_FWD,BOOL,Coal Valve 2 Vibrating Chute a Motor Forward,0
-RLF_SUB_PLC,%Q00015,%R01658,400658,FV02b_MTR_FWD,BOOL,Coal Valve 2 Vibrating Chute b Motor Forward,0
-RLF_SUB_PLC,%Q00016,%R01659,400659,FV02c_ACT_FWD,BOOL,Coal Valve 2 Control Gate Actuator Open/Forward,0
-RLF_SUB_PLC,%Q00017,%R01660,400660,FV02c_ACT_REV,BOOL,Coal Valve 2 Control Gate Actuator Close/Reverse,0
-RLF_SUB_PLC,%Q00018,%R01661,400661,FV02d_ACT_FWD,BOOL,Coal Valve 2 Cutoff Gate Actuator Open/Forward,0
-RLF_SUB_PLC,%Q00019,%R01662,400662,FV02d_ACT_REV,BOOL,Coal Valve 2 Cutoff Gate Actuator Close/Reverse,0
-RLF_SUB_PLC,%Q00020,%R01663,400663,FV03a_MTR_FWD,BOOL,Coal Valve 3 Vibrating Chute a Motor Forward,0
-RLF_SUB_PLC,%Q00021,%R01664,400664,FV03b_MTR_FWD,BOOL,Coal Valve 3 Vibrating Chute b Motor Forward,0
-RLF_SUB_PLC,%Q00022,%R01665,400665,FV03c_ACT_FWD,BOOL,Coal Valve 3 Control Gate Actuator Open/Forward,0
-RLF_SUB_PLC,%Q00023,%R01666,400666,FV03c_ACT_REV,BOOL,Coal Valve 3 Control Gate Actuator Close/Reverse,0
-RLF_SUB_PLC,%Q00024,%R01667,400667,FV03d_ACT_FWD,BOOL,Coal Valve 3 Cutoff Gate Actuator Open/Forward,0
-RLF_SUB_PLC,%Q00025,%R01668,400668,FV03d_ACT_REV,BOOL,Coal Valve 3 Cutoff Gate Actuator Close/Reverse,0
-RLF_SUB_PLC,%Q00026,%R01669,400669,FV04a_MTR_FWD,BOOL,Coal Valve 4 Vibrating Chute a Motor Forward,0
-RLF_SUB_PLC,%Q00027,%R01670,400670,FV04b_MTR_FWD,BOOL,Coal Valve 4 Vibrating Chute b Motor Forward,0
-RLF_SUB_PLC,%Q00028,%R01671,400671,FV04c_ACT_FWD,BOOL,Coal Valve 4 Control Gate Actuator Open/Forward,0
-RLF_SUB_PLC,%Q00029,%R01672,400672,FV04c_ACT_REV,BOOL,Coal Valve 4 Control Gate Actuator Close/Reverse,0
-RLF_SUB_PLC,%Q00030,%R01673,400673,FV04d_ACT_FWD,BOOL,Coal Valve 4 Cutoff Gate Actuator Open Forward,0
-RLF_SUB_PLC,%Q00031,%R01674,400674,FV04d_ACT_REV,BOOL,Coal Valve 4 Cutoff Gate Actuator Close/Reverse,0
-RLF_SUB_PLC,%Q00032,%R01675,400675,CV04_MTR1_FWD,BOOL,Conveyor 4 Drive A Forward,0
-RLF_SUB_PLC,%Q00033,%R01676,400676,CV04_MTR2_FWD,BOOL,Conveyor 4 Drive B Forward,0
-RLF_SUB_PLC,%Q00034,%R01677,400677,BN02_MTR_FWD,BOOL,Bin Dust Collector Motor Forward,0
-RLF_SUB_PLC,%Q00035,%R01678,400678,BN02_DSSOL_ON,BOOL,Bin Dust Collector Solenoid On,0
-RLF_SUB_PLC,%Q00036,%R01679,400679,SA02_RUN,BOOL,Sample Plant Running,0
-RLF_SUB_PLC,%Q00037,%R01680,400680,SA02_RDY,BOOL,Sample Plant Ready,1
-RLF_SUB_PLC,%Q00038,%R01681,400681,SA02_FLT,BOOL,Sample Plant Fault,0
-RLF_SUB_PLC,%Q00039,%R01682,400682,SA02a_MTR_FWD,BOOL,Sample Plant Primary Sampler Motor Forward,0
-RLF_SUB_PLC,%Q00040,%R01683,400683,CV05_MTR_FWD,BOOL,Sample Plant Conveyor 5 Motor Forward,0
-RLF_SUB_PLC,%Q00041,%R01684,400684,SA02b_MTR_FWD,BOOL,Sample Plant Screw Feeder Motor Forward,0
-RLF_SUB_PLC,%Q00042,%R01685,400685,SA02c_MTR_FWD,BOOL,Sample Plant Hammer Mill Motor Forward,0
-RLF_SUB_PLC,%Q00043,%R01686,400686,SA02d_MTR_FWD,BOOL,Sample Plant Secondary Sampler Motor Forward,0
-RLF_SUB_PLC,%Q00044,%R01687,400687,SA02e_MTR_FWD,BOOL,Sample Plant Carousel Motor Forward,0
-RLF_SUB_PLC,%Q00045,%R01688,400688,SA02b_MTR_REV,BOOL,Sample Plant Screw Feeder Motor Reverse,0
-RLF_SUB_PLC,%Q00046,%R01689,400689,SA02a_BRK_RLS,BOOL,Sample Plant Primary Sampler Motor Brake Release,0
-RLF_SUB_PLC,%Q00047,%R01690,400690,SA02a_HLTHY,BOOL,SA02a Healthy,0
-RLF_SUB_PLC,%Q00049,%R01691,400691,FV01_DSSOL_ON,BOOL,Coal Valve 1 Dust Suppresion Solenoid On,0
-RLF_SUB_PLC,%Q00050,%R01692,400692,FV02_DSSOL_ON,BOOL,Coal Valve 2 Dust Suppresion Solenoid On,0
-RLF_SUB_PLC,%Q00051,%R01693,400693,FV03_DSSOL_ON,BOOL,Coal Valve 3 Dust Suppresion Solenoid On,0
-RLF_SUB_PLC,%Q00052,%R01694,400694,FV04_DSSOL_ON,BOOL,Coal Valve 4 Dust Suppresion Solenoid On,0
-RLF_SUB_PLC,%Q00053,%R01695,400695,RLF_GASSIREN,BOOL,Tunnel Evacuation  Relay,1
-RLF_SUB_PLC,%Q00054,%R01696,400696,RLF_FIPGAS,BOOL,Gas Detected FIP Relay,1
-RLF_SUB_PLC,%Q00055,%R01697,400697,FV05_DSSOL_ON,BOOL,Coal Valve 5 Dust Suppresion Solenoid On,0
-RLF_SUB_PLC,%Q00056,%R01698,400698,RLF_TNL_ALERT_RED,BOOL,Tunnel Alert Red Light,0
-RLF_SUB_PLC,%Q00057,%R01699,400699,RLF_TNL_ALERT_GREEN,BOOL,Tunnel Alert Gren Light,1
-RLF_SUB_PLC,%Q00058,%R01700,400700,RLF_TNL_ALERT_SIREN,BOOL,Tunnel Alert Siren,0
-RLF_SUB_PLC,%Q00065,%R01701,400701,FV05a_MTR_FWD,BOOL,Coal Valve 5 Vibrating Chute a Motor Forward,0
-RLF_SUB_PLC,%Q00066,%R01702,400702,FV05b_MTR_FWD,BOOL,Coal Valve 5 Vibrating Chute b Motor Forward,0
-RLF_SUB_PLC,%Q00067,%R01703,400703,FV05c_ACT_FWD,BOOL,Coal Valve 5 Control Gate Actuator Open/Forward,0
-RLF_SUB_PLC,%Q00068,%R01704,400704,FV05c_ACT_REV,BOOL,Coal Valve 5 Control Gate Actuator Close/Reverse,0
-RLF_SUB_PLC,%Q00069,%R01705,400705,FV05d_ACT_FWD,BOOL,Coal Valve 5 Cutoff Gate Actuator Open Forward,0
-RLF_SUB_PLC,%Q00070,%R01706,400706,FV05d_ACT_REV,BOOL,Coal Valve 5 Cutoff Gate Actuator Close/Reverse,0
-RLF_SUB_PLC,%Q00071,%R01707,400707,FN01_MTR_FWD,BOOL,Vent Fan Drive Motor Forward,1
+RLF,%M00104,%R01168,400168,RFID1_ST,BOOL,Setup Trigger,
+RLF,%M00101,%R01169,400169,RFID1_TST,BOOL,Time Sync Trigger,
+RLF,%M00102,%R01170,400170,RFID1_VR,BOOL,Valid Read,
+RLF,%M00113,%R01171,400171,RFID2_Online,BOOL,Online,
+RLF,%M00114,%R01172,400172,RFID2_ST,BOOL,Setup Trigger,
+RLF,%M00111,%R01173,400173,RFID2_TST,BOOL,Time Sync Trigger,
+RLF,%M00112,%R01174,400174,RFID2_VR,BOOL,Valid Read,
+RLF_SUB_PLC,%AI0001,%R02001,401001,CV04_MTR1_CRNT,INT,,-7920
+RLF_SUB_PLC,%AI0002,%R02002,401002,CV04_MTR2_CRNT,INT,,-7920
+RLF_SUB_PLC,%AI0003,%R02003,401003,FV01c_POSTN,INT,,16740
+RLF_SUB_PLC,%AI0004,%R02004,401004,FV02c_POSTN,INT,Coal Valve 2 Control Gate Position,21980
+RLF_SUB_PLC,%AI0005,%R02005,401005,FV03c_POSTN,INT,Coal Valve 3 Control Gate Position,24640
+RLF_SUB_PLC,%AI0006,%R02006,401006,FV04c_POSTN,INT,Coal Valve 4 Control Gate Position,23180
+RLF_SUB_PLC,%AI0011,%R02007,401007,BN02_LVL,INT,Bin Ultrasonic Level,32040
+RLF_SUB_PLC,%AI0012,%R02008,401008,CV04_WGH05_FLWRT,INT,Conveyor 4 Belt Weigher Coal Flow Rate,10
+RLF_SUB_PLC,%AI0013,%R02009,401009,CV04_WGH04_FLWRT,INT,Conveyor 4 Belt Weigher Coal Flow Rate,0
+RLF_SUB_PLC,%AI0014,%R02010,401010,CV04_WGH03_FLWRT,INT,Conveyor 4 Belt Weigher Coal Flow Rate,-20
+RLF_SUB_PLC,%AI0015,%R02011,401011,CV04_WGH02_FLWRT,INT,Conveyor 4 Belt Weigher Coal Flow Rate,-40
+RLF_SUB_PLC,%AI0028,%R02012,401012,FV05c_POSTN,INT,Coal Valve 5 Control Gate Position,19843
+RLF_SUB_PLC,%AI0029,%R02013,401013,CV04_WGH07_FLWRT,INT,Conveyor 4 Belt Weigher Coal Flow Rate,0
+RLF_SUB_PLC,%AI0033,%R02014,401014,CV04_MTR1_RTD1,INT,Conveyor 4 Drive A Winding RTD 1,54
+RLF_SUB_PLC,%AI0034,%R02015,401015,CV04_MTR1_RTD2,INT,Conveyor 4 Drive A Winding RTD 2,56
+RLF_SUB_PLC,%AI0035,%R02016,401016,CV04_MTR1_RTD3,INT,Conveyor 4 Drive A Winding RTD 3,49
+RLF_SUB_PLC,%AI0036,%R02017,401017,CV04_BRG1_RTD1,INT,Conveyor 4 Drive A Bearing RTD 1,45
+RLF_SUB_PLC,%AI0037,%R02018,401018,CV04_BRG1_RTD2,INT,Conveyor 4 Drive A Bearing RTD 2,42
+RLF_SUB_PLC,%AI0038,%R02019,401019,CV04_GBOX1_RTD,INT,Conveyor 4 Drive A Gearbox RTD,42
+RLF_SUB_PLC,%AI0039,%R02020,401020,CV04_MTR2_RTD1,INT,Conveyor 4 Drive B Winding RTD 1,47
+RLF_SUB_PLC,%AI0040,%R02021,401021,CV04_MTR2_RTD2,INT,Conveyor 4 Drive B Winding RTD 2,47
+RLF_SUB_PLC,%AI0041,%R02022,401022,CV04_MTR2_RTD3,INT,Conveyor 4 Drive B Winding RTD 3,57
+RLF_SUB_PLC,%AI0042,%R02023,401023,CV04_BRG2_RTD1,INT,Conveyor 4 Drive B Bearing RTD 1,41
+RLF_SUB_PLC,%AI0043,%R02024,401024,CV04_BRG2_RTD2,INT,Conveyor 4 Drive B Bearing RTD 2,41
+RLF_SUB_PLC,%AI0044,%R02025,401025,CV04_GBOX2_RTD,INT,Conveyor 4 Drive B Gearbox RTD,36
+RLF_SUB_PLC,%AI0045,%R02026,401026,CH4_GAS_LVL1,INT,Coal Valve 1 CH4 Detectorr,0
+RLF_SUB_PLC,%AI0046,%R02027,401027,CO_GAS_LVL1,INT,Coal Valve 1 CO Detector ,0
+RLF_SUB_PLC,%AI0047,%R02028,401028,CH4_GAS_LVL2,INT,Coal Valve 2 CH4 Detectorr,0
+RLF_SUB_PLC,%AI0048,%R02029,401029,CO_GAS_LVL2,INT,Coal Valve 2 CO Detector ,0
+RLF_SUB_PLC,%AI0049,%R02030,401030,CH4_GAS_LVL3,INT,Coal Valve 3 CH4 Detector ,0
+RLF_SUB_PLC,%AI0050,%R02031,401031,CO_GAS_LVL3,INT,Coal Valve 3 CO Detector ,0
+RLF_SUB_PLC,%AI0051,%R02032,401032,CH4_GAS_LVL4,INT,Coal Valve 4 CH4 Detector ,0
+RLF_SUB_PLC,%AI0052,%R02033,401033,CO_GAS_LVL4,INT,Coal Valve 4 CO Detector ,0
+RLF_SUB_PLC,%AI0053,%R02034,401034,CH4_GAS_LVL5,INT,Coal Valve 5 CH4 Detector ,0
+RLF_SUB_PLC,%AI0054,%R02035,401035,CO_GAS_LVL5,INT,Coal Valve 5 CO Detector ,0
+RLF_SUB_PLC,%AI0064,%R02036,401036,FN01_ANEM,INT,Reclaim Tunnel Air Flow,0
+RLF_SUB_PLC,%AI0071,%R02037,401037,CV04_TT01_RAW,INT,CV04 FV01 Thermal Sensor Temperature Raw,7124
+RLF_SUB_PLC,%AI0072,%R02038,401038,CV04_TT02_RAW,INT,CV04 FV02 Thermal Sensor Temperature Raw,6714
+RLF_SUB_PLC,%AI0073,%R02039,401039,CV04_TT03_RAW,INT,CV04 FV03 Thermal Sensor Temperature Raw,6744
+RLF_SUB_PLC,%AI0074,%R02040,401040,CV04_TT04_RAW,INT,CV04 FV04 Thermal Sensor Temperature,6454
+RLF_SUB_PLC,%AI0075,%R02041,401041,CV04_TT05_RAW,INT,CV04 FV05 Thermal Sensor Temperature,6183
+RLF_SUB_PLC,%AI0076,%R02042,401042,RLF_SUB_Rack2_Slot4_AI06,INT,Rack 2 Slot 4 AI06,0
+RLF_SUB_PLC,%AI0077,%R02043,401043,RLF_SUB_Rack2_Slot4_AI07,INT,Rack 2 Slot 4 AI07,0
+RLF_SUB_PLC,%AI0078,%R02044,401044,RLF_SUB_Rack2_Slot4_AI08,INT,Rack 2 Slot 4 AI08,0
+RLF_SUB_PLC,%AI0079,%R02045,401045,RLF_SUB_Rack2_Slot4_AI09,INT,Rack 2 Slot 4 AI09,0
+RLF_SUB_PLC,%AI0080,%R02046,401046,RLF_SUB_Rack2_Slot4_AI10,INT,Rack 2 Slot 4 AI010,0
+RLF_SUB_PLC,%AI0081,%R02047,401047,RLF_SUB_Rack2_Slot4_AI11,INT,Rack 2 Slot 4 AI011,0
+RLF_SUB_PLC,%AI0082,%R02048,401048,RLF_SUB_Rack2_Slot4_AI12,INT,Rack 2 Slot 4 AI012,0
+RLF_SUB_PLC,%AI0083,%R02049,401049,RLF_SUB_Rack2_Slot4_AI13,INT,Rack 2 Slot 4 AI013,0
+RLF_SUB_PLC,%AI0084,%R02050,401050,RLF_SUB_Rack2_Slot4_AI14,INT,Rack 2 Slot 4 AI014,0
+RLF_SUB_PLC,%AI0085,%R02051,401051,RLF_SUB_Rack2_Slot4_AI15,INT,Rack 2 Slot 4 AI015,0
+RLF_SUB_PLC,%AI0086,%R02052,401052,RLF_SUB_Rack2_Slot4_AI16,INT,Rack 2 Slot 4 AI016,0
+RLF_SUB_PLC,%AI0087,%R02053,401053,aatempreal,REAL,,0
+RLF_SUB_PLC,%I00001,%R02054,401054,CV04_MTR1_CTRP,BOOL,Conveyor 4 Drive a Control Power Available,1
+RLF_SUB_PLC,%I00002,%R02055,401055,CV04_MTR1_CB,BOOL,Conveyor 4 Drive a Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00003,%R02056,401056,CV04_MTR1_CONT,BOOL,Conveyor 4 Drive a Contactor Closed,0
+RLF_SUB_PLC,%I00004,%R02057,401057,CV04_MTR1_ELR,BOOL,Conveyor 4 Drive A Earth Leakage Relay,1
+RLF_SUB_PLC,%I00005,%R02058,401058,CV04_MTR1_VSD_FLT,BOOL,Conveyor 4 Drive A VSD Fault,0
+RLF_SUB_PLC,%I00006,%R02059,401059,CV04_LCU_STRT,BOOL,Conveyor 4 Local Control Unit Start,0
+RLF_SUB_PLC,%I00007,%R02060,401060,CV04_LCU1_NISO,BOOL,Conveyor 4 Local Control Unit Drive a Not Isolated,0
+RLF_SUB_PLC,%I00008,%R02061,401061,CV04_LCU_ESP,BOOL,Conveyor 4 Local Control Unit Emergency Stop,0
+RLF_SUB_PLC,%I00009,%R02062,401062,CV04_LCU_BLTDFTBYP,BOOL,Conveyor 4 Local Control Unit Belt Drift Bypass,0
+RLF_SUB_PLC,%I00010,%R02063,401063,CV04_PULLSW1A,BOOL,Conveyor 4 Pullwire Switch,0
+RLF_SUB_PLC,%I00011,%R02064,401064,CV04_PULLSW1B,BOOL,Conveyor 4 Pullwire Switch,0
+RLF_SUB_PLC,%I00012,%R02065,401065,CV04_PULLSW2A,BOOL,Conveyor 4 Pullwire Switch,0
+RLF_SUB_PLC,%I00013,%R02066,401066,CV04_PULLSW2B,BOOL,Conveyor 4 Pullwire Switch,0
+RLF_SUB_PLC,%I00014,%R02067,401067,CV04_PULLSW3A,BOOL,Conveyor 4 Pullwire Switch,0
+RLF_SUB_PLC,%I00015,%R02068,401068,CV04_PULLSW3B,BOOL,Conveyor 4 Pullwire Switch,0
+RLF_SUB_PLC,%I00016,%R02069,401069,CV04_PULLSW4A,BOOL,Conveyor 4 Pullwire Switch,0
+RLF_SUB_PLC,%I00017,%R02070,401070,CV04_PULLSW4B,BOOL,Conveyor 4 Pullwire Switch,0
+RLF_SUB_PLC,%I00018,%R02071,401071,CV04_BLTDF1,BOOL,Conveyor 4 Belt Drift Switch,1
+RLF_SUB_PLC,%I00019,%R02072,401072,CV04_BLTDF2,BOOL,Conveyor 4 Belt Drift Switch,0
+RLF_SUB_PLC,%I00020,%R02073,401073,CV04_BLTDF3,BOOL,Conveyor 4 Belt Drift Switch,1
+RLF_SUB_PLC,%I00021,%R02074,401074,CV04_BLTDF8,BOOL,Conveyor 4 Belt Drift Switch 8,1
+RLF_SUB_PLC,%I00022,%R02075,401075,CV04_BLTDF7,BOOL,Conveyor 4 Belt Drift Switch 7,1
+RLF_SUB_PLC,%I00023,%R02076,401076,CV04_BLTDF6,BOOL,Conveyor 4 Belt Drift Switch,1
+RLF_SUB_PLC,%I00024,%R02077,401077,CV04_USPD,BOOL,CV04 Under Speed Switch 1,1
+RLF_SUB_PLC,%I00025,%R02078,401078,CV04_BLTRIP_01,BOOL,Conveyor 4 Belt Rip Switch No. 1 (FV03),1
+RLF_SUB_PLC,%I00026,%R02079,401079,CV04_BLTRIP_02,BOOL,Conveyor 4 Belt Rip Switch No .2 (FV02),1
+RLF_SUB_PLC,%I00027,%R02080,401080,CV04_BLTRIP_03,BOOL,Conveyor 4 Belt Rip Switch No .3 (FV01),1
+RLF_SUB_PLC,%I00028,%R02081,401081,CV04_BLTRIP_04,BOOL,Conveyor 4 Belt Rip Switch No .4 (Take-up Tower),1
+RLF_SUB_PLC,%I00029,%R02082,401082,CV04_BLTRIP_05,BOOL,Conveyor 4 Belt Rip Switch No .5 (FV04),1
+RLF_SUB_PLC,%I00030,%R02083,401083,CV04_BLTRIP_06,BOOL,Conveyor 4 Belt Rip Switch No .6 (FV05),1
+RLF_SUB_PLC,%I00031,%R02084,401084,CV04_PULLSW5A,BOOL,Conveyor 4 Pullwire Switch 5A,0
+RLF_SUB_PLC,%I00032,%R02085,401085,CV04_PULLSW5B,BOOL,Conveyor 4 Pullwire Switch 5B,0
+RLF_SUB_PLC,%I00033,%R02086,401086,CV04_BRK1_CTRP,BOOL,Conveyor 4 Drive a Brake Control Power Available,1
+RLF_SUB_PLC,%I00034,%R02087,401087,CV04_BRK1_CB,BOOL,Conveyor 4 Drive a Brake Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00035,%R02088,401088,CV04_BRK1_CONT,BOOL,Conveyor 4 Drive a Brake Contactor Closed,0
+RLF_SUB_PLC,%I00036,%R02089,401089,CV04_BRK1_ELR,BOOL,Conveyor 4 Drive a Brake Earth Leakage Relay,1
+RLF_SUB_PLC,%I00037,%R02090,401090,CV04_BRK1_TOL,BOOL,Conveyor 4 Drive a Brake Thermal Overload,0
+RLF_SUB_PLC,%I00038,%R02091,401091,CV04_BLCU1_STRT,BOOL,Conveyor 4 Drive a Brake Local Control Unit Local Start,0
+RLF_SUB_PLC,%I00039,%R02092,401092,CV04_BLCU1_ISO,BOOL,Conveyor 4 Drive a Brake Local Control Unit Local Isolator Open,0
+RLF_SUB_PLC,%I00040,%R02093,401093,CV04_BRK1_LIFT,BOOL,Conveyor 4 Drive a Brake Lifted Limit Switch,0
+RLF_SUB_PLC,%I00042,%R02094,401094,CV04_MTR1_VSD_RUN,BOOL,Conveyor 4 Motor 1 VSD Running Relay,0
+RLF_SUB_PLC,%I00044,%R02095,401095,CV04_MTR2_CTRP,BOOL,Conveyor 4 Drive b Control Power Available,1
+RLF_SUB_PLC,%I00045,%R02096,401096,CV04_MTR2_CB,BOOL,Conveyor 4 Drive b Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00046,%R02097,401097,CV04_MTR2_CONT,BOOL,Conveyor 4 Drive b Contactor Closed,0
+RLF_SUB_PLC,%I00047,%R02098,401098,CV04_MTR2_ELR,BOOL,Conveyor 4 Drive B Earth Leakage Relay,1
+RLF_SUB_PLC,%I00048,%R02099,401099,CV04_MTR2_VSD_FLT,BOOL,Conveyor 4 Drive B VSD Fault,0
+RLF_SUB_PLC,%I00049,%R02100,401100,CV04_LCU2_NISO,BOOL,Conveyor 4 Local Control Unit Drive b Not Isolated,0
+RLF_SUB_PLC,%I00050,%R02101,401101,CV04_MTR2_VSD_RUN,BOOL,Conveyor 4 Motor 2 VSD Running Relay,0
+RLF_SUB_PLC,%I00051,%R02102,401102,CV04_BRK_SPD,BOOL,CV04 Brake Speed Switch,1
+RLF_SUB_PLC,%I00053,%R02103,401103,CV04_BRK2_CTRP,BOOL,Conveyor 4 Drive b Brake Control Power Available,1
+RLF_SUB_PLC,%I00054,%R02104,401104,CV04_BRK2_CB,BOOL,Conveyor 4 Drive b Brake Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00055,%R02105,401105,CV04_BRK2_CONT,BOOL,Conveyor 4 Drive b Brake Contactor Closed,0
+RLF_SUB_PLC,%I00056,%R02106,401106,CV04_BRK2_ELR,BOOL,Conveyor 4 Drive b Brake Earth Leakage Relay,1
+RLF_SUB_PLC,%I00057,%R02107,401107,CV04_BRK2_TOL,BOOL,Conveyor 4 Drive b Brake Thermal Overload,0
+RLF_SUB_PLC,%I00058,%R02108,401108,CV04_BLCU2_STRT,BOOL,Conveyor 4 Drive b Brake Local Control Unit Local Start,0
+RLF_SUB_PLC,%I00059,%R02109,401109,CV04_BLCU2_ISO,BOOL,Conveyor 4 Drive b Brake Local Control Unit Local Isolator Open,0
+RLF_SUB_PLC,%I00060,%R02110,401110,CV04_BRK2_LIFT,BOOL,Conveyor 4 Drive b Brake Lifted Limit Switch,0
+RLF_SUB_PLC,%I00065,%R02111,401111,FV01a_CTRP,BOOL,Coal Valve 1 Vibrating Chute a Control Power Available,1
+RLF_SUB_PLC,%I00066,%R02112,401112,FV01a_MTR_CB,BOOL,Coal Valve 1 Vibrating Chute a Motor Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00067,%R02113,401113,FV01a_MTR_CONT,BOOL,Coal Valve 1 Vibrating Chute a Motor Contactor Closed,0
+RLF_SUB_PLC,%I00068,%R02114,401114,FV01a_MTR_ELR,BOOL,Coal Valve 1 Vibrating Chute a Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00069,%R02115,401115,FV01a_MTR_TOL,BOOL,Coal Valve 1 Vibrating Chute a Motor Thermal Overload,0
+RLF_SUB_PLC,%I00070,%R02116,401116,FV01a_MTR_THM,BOOL,Coal Valve 1 Vibrating Chute a Motor Thermistor,0
+RLF_SUB_PLC,%I00071,%R02117,401117,FV01_LCU_STRT,BOOL,Coal Valve 1 Local Control Unit Vibrating Drives Local Start,0
+RLF_SUB_PLC,%I00072,%R02118,401118,FV01a_LCU_ISO,BOOL,Coal Valve 1 Vibrating Chute a Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00073,%R02119,401119,FV01_LCU_ESP,BOOL,Coal Valve 1 Local Control Unit Emergency Stop,0
+RLF_SUB_PLC,%I00076,%R02120,401120,FV01b_CTRP,BOOL,Coal Valve 1 Vibrating Chute b Control Power Available,1
+RLF_SUB_PLC,%I00077,%R02121,401121,FV01b_MTR_CB,BOOL,Coal Valve 1 Vibrating Chute b Motor Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00078,%R02122,401122,FV01b_MTR_CONT,BOOL,Coal Valve 1 Vibrating Chute b Motor Contactor Closed,0
+RLF_SUB_PLC,%I00079,%R02123,401123,FV01b_MTR_ELR,BOOL,Coal Valve 1 Vibrating Chute b Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00080,%R02124,401124,FV01b_MTR_TOL,BOOL,Coal Valve 1 Vibrating Chute b Motor Thermal Overload,0
+RLF_SUB_PLC,%I00081,%R02125,401125,FV01b_MTR_THM,BOOL,Coal Valve 1 Vibrating Chute b Motor Thermistor,0
+RLF_SUB_PLC,%I00082,%R02126,401126,FV01b_LCU_ISO,BOOL,Coal Valve 1 Vibrating Chute b Local Control Unit Open,1
+RLF_SUB_PLC,%I00085,%R02127,401127,FV01c_CTRP,BOOL,Coal Valve 1 Control Gate Control Power Available,1
+RLF_SUB_PLC,%I00086,%R02128,401128,FV01c_ACT_CB,BOOL,Coal Valve 1 Control Gate Actuator Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00087,%R02129,401129,FV01c_ACT_OPNC,BOOL,Coal Valve 1 Control Gate Actuator Opening Contactor Closed,0
+RLF_SUB_PLC,%I00088,%R02130,401130,FV01c_ACT_CLSC,BOOL,Coal Valve 1 Control Gate Actuator Closing Contactor Closed,0
+RLF_SUB_PLC,%I00089,%R02131,401131,FV01c_ACT_ELR,BOOL,Coal Valve 1 Control Gate Actuator Earth Leakage Relay,1
+RLF_SUB_PLC,%I00090,%R02132,401132,FV01c_ACT_EOL,BOOL,Coal Valve 1 Control Gate Actuator Electronic Overload,1
+RLF_SUB_PLC,%I00091,%R02133,401133,FV01c_LCU_OPN,BOOL,Coal Valve 1 Control Gate Local Control Unit Open,0
+RLF_SUB_PLC,%I00092,%R02134,401134,FV01c_LCU_CLS,BOOL,Coal Valve 1 Control Gate Local Control Unit Closed,0
+RLF_SUB_PLC,%I00093,%R02135,401135,FV01c_LCU_ISO,BOOL,Coal Valve 1 Control Gate Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00094,%R02136,401136,FV01c_ACT_OSW,BOOL,Coal Valve 1 Control Gate Actuator Open Limit Switch,1
+RLF_SUB_PLC,%I00095,%R02137,401137,FV01c_ACT_CSW,BOOL,Coal Valve 1 Control Gate Actuator Closed Limit Switch,0
+RLF_SUB_PLC,%I00097,%R02138,401138,FV02a_CTRP,BOOL,Coal Valve 2 Vibrating Chute a Control Power Available,1
+RLF_SUB_PLC,%I00098,%R02139,401139,FV02a_MTR_CB,BOOL,Coal Valve 2 Vibrating Chute a Motor Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00099,%R02140,401140,FV02a_MTR_CONT,BOOL,Coal Valve 2 Vibrating Chute a Motor Contactor Closed,0
+RLF_SUB_PLC,%I00100,%R02141,401141,FV02a_MTR_ELR,BOOL,Coal Valve 2 Vibrating Chute a Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00101,%R02142,401142,FV02a_MTR_TOL,BOOL,Coal Valve 2 Vibrating Chute a Motor Thermal Overload,0
+RLF_SUB_PLC,%I00103,%R02143,401143,FV02_LCU_STRT,BOOL,Coal Valve 2 Local Control Unit Vibrating Drives Local Start,0
+RLF_SUB_PLC,%I00104,%R02144,401144,FV02a_LCU_ISO,BOOL,Coal Valve 2 Vibrating Chute a Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00105,%R02145,401145,FV02_LCU_ESP,BOOL,Coal Valve 2 Local Control Unit Emergency Stop,0
+RLF_SUB_PLC,%I00108,%R02146,401146,FV02b_CTRP,BOOL,Coal Valve 2 Vibrating Chute b Control Power Available,1
+RLF_SUB_PLC,%I00109,%R02147,401147,FV02b_MTR_CB,BOOL,Coal Valve 2 Vibrating Chute b Motor Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00110,%R02148,401148,FV02b_MTR_CONT,BOOL,Coal Valve 2 Vibrating Chute b Motor Contactor Closed,0
+RLF_SUB_PLC,%I00111,%R02149,401149,FV02b_MTR_ELR,BOOL,Coal Valve 2 Vibrating Chute b Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00112,%R02150,401150,FV02b_MTR_TOL,BOOL,Coal Valve 2 Vibrating Chute b Motor Thermal Overload,0
+RLF_SUB_PLC,%I00113,%R02151,401151,FV02b_MTR_THM,BOOL,Coal Valve 2 Vibrating Chute b Motor Thermistor,0
+RLF_SUB_PLC,%I00114,%R02152,401152,FV02b_LCU_ISO,BOOL,Coal Valve 2 Vibrating Chute b Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00117,%R02153,401153,FV02c_CTRP,BOOL,Coal Valve 2 Control Gate Control Power Available,1
+RLF_SUB_PLC,%I00118,%R02154,401154,FV02c_ACT_CB,BOOL,Coal Valve 2 Control Gate Actuator Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00119,%R02155,401155,FV02c_ACT_OPNC,BOOL,Coal Valve 2 Control Gate Actuator Opening Contactor Closed,0
+RLF_SUB_PLC,%I00120,%R02156,401156,FV02c_ACT_CLSC,BOOL,Coal Valve 2 Control Gate Actuator Closing Contactor Closed,0
+RLF_SUB_PLC,%I00121,%R02157,401157,FV02c_ACT_ELR,BOOL,Coal Valve 2 Control Gate Actuator Earth Leakage Relay,1
+RLF_SUB_PLC,%I00122,%R02158,401158,FV02c_ACT_EOL,BOOL,Coal Valve 2 Control Gate Actuator Electronic Overload,1
+RLF_SUB_PLC,%I00123,%R02159,401159,FV02c_LCU_OPN,BOOL,Coal Valve 2 Control Gate Local Control Unit Open,0
+RLF_SUB_PLC,%I00124,%R02160,401160,FV02c_LCU_CLS,BOOL,Coal Valve 2 Control Gate Local Control Unit Closed,0
+RLF_SUB_PLC,%I00125,%R02161,401161,FV02c_LCU_ISO,BOOL,Coal Valve 2 Control Gate Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00126,%R02162,401162,FV02c_ACT_OSW,BOOL,Coal Valve 2 Control Gate Actuator Open Limit Switch,1
+RLF_SUB_PLC,%I00127,%R02163,401163,FV02c_ACT_CSW,BOOL,Coal Valve 2 Control Gate Actuator Closed Limit Switch,0
+RLF_SUB_PLC,%I00129,%R02164,401164,FV03a_CTRP,BOOL,Coal Valve 3 Vibrating Chute a Control Power Available,1
+RLF_SUB_PLC,%I00130,%R02165,401165,FV03a_MTR_CB,BOOL,Coal Valve 3 Vibrating Chute a Motor Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00131,%R02166,401166,FV03a_MTR_CONT,BOOL,Coal Valve 3 Vibrating Chute a Motor Contactor Closed,0
+RLF_SUB_PLC,%I00132,%R02167,401167,FV03a_MTR_ELR,BOOL,Coal Valve 3 Vibrating Chute a Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00133,%R02168,401168,FV03a_MTR_TOL,BOOL,Coal Valve 3 Vibrating Chute a Motor Thermal Overload,0
+RLF_SUB_PLC,%I00134,%R02169,401169,FV03a_MTR_THM,BOOL,Coal Valve 3 Vibrating Chute a Motor Thermistor,0
+RLF_SUB_PLC,%I00135,%R02170,401170,FV03_LCU_STRT,BOOL,Coal Valve 3 Local Control Unit Vibrating Drives Local Start,0
+RLF_SUB_PLC,%I00136,%R02171,401171,FV03a_LCU_ISO,BOOL,Coal Valve 3 Vibrating Chute a Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00137,%R02172,401172,FV03_LCU_ESP,BOOL,Coal Valve 3 Local Control Unit Emergency Stop,0
+RLF_SUB_PLC,%I00140,%R02173,401173,FV03b_CTRP,BOOL,Coal Valve 3 Vibrating Chute b Control Power Available,1
+RLF_SUB_PLC,%I00141,%R02174,401174,FV03b_MTR_CB,BOOL,Coal Valve 3 Vibrating Chute b Motor Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00142,%R02175,401175,FV03b_MTR_CONT,BOOL,Coal Valve 3 Vibrating Chute b Motor Contactor Closed,0
+RLF_SUB_PLC,%I00143,%R02176,401176,FV03b_MTR_ELR,BOOL,Coal Valve 3 Vibrating Chute b Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00144,%R02177,401177,FV03b_MTR_TOL,BOOL,Coal Valve 3 Vibrating Chute b Motor Thermal Overload,0
+RLF_SUB_PLC,%I00145,%R02178,401178,FV03b_MTR_THM,BOOL,Coal Valve 3 Vibrating Chute b Motor Thermistor,0
+RLF_SUB_PLC,%I00146,%R02179,401179,FV03b_LCU_ISO,BOOL,Coal Valve 3 Vibrating Chute b Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00149,%R02180,401180,FV03c_CTRP,BOOL,Coal Valve 3 Control Gate Control Power Available,1
+RLF_SUB_PLC,%I00150,%R02181,401181,FV03c_ACT_CB,BOOL,Coal Valve 3 Control Gate Actuator Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00151,%R02182,401182,FV03c_ACT_OPNC,BOOL,Coal Valve 3 Control Gate Actuator Opening Contactor Closed,0
+RLF_SUB_PLC,%I00152,%R02183,401183,FV03c_ACT_CLSC,BOOL,Coal Valve 3 Control Gate Actuator Closing Contactor Closed,0
+RLF_SUB_PLC,%I00153,%R02184,401184,FV03c_ACT_ELR,BOOL,Coal Valve 3 Control Gate Actuator Earth Leakage Relay,1
+RLF_SUB_PLC,%I00154,%R02185,401185,FV03c_ACT_EOL,BOOL,Coal Valve 3 Control Gate Actuator Electronic Overload,1
+RLF_SUB_PLC,%I00155,%R02186,401186,FV03c_LCU_OPN,BOOL,Coal Valve 3 Control Gate Local Control Unit Open,0
+RLF_SUB_PLC,%I00156,%R02187,401187,FV03c_LCU_CLS,BOOL,Coal Valve 3 Control Gate Local Control Unit Closed,0
+RLF_SUB_PLC,%I00157,%R02188,401188,FV03c_LCU_ISO,BOOL,Coal Valve 3 Control Gate Local Control Unit  Isolator Open,1
+RLF_SUB_PLC,%I00158,%R02189,401189,FV03c_ACT_OSW,BOOL,Coal Valve 3 Control Gate Actuator Open Limit Switch,1
+RLF_SUB_PLC,%I00159,%R02190,401190,FV03c_ACT_CSW,BOOL,Coal Valve 3 Control Gate Actuator Closed Limit Switch,0
+RLF_SUB_PLC,%I00161,%R02191,401191,FV04a_CTRP,BOOL,Coal Valve 4 Vibrating Chute a Control Power Available,1
+RLF_SUB_PLC,%I00162,%R02192,401192,FV04a_MTR_CB,BOOL,Coal Valve 4 Vibrating Chute a Motor Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00163,%R02193,401193,FV04a_MTR_CONT,BOOL,Coal Valve 4 Vibrating Chute a Motor Contactor Closed,0
+RLF_SUB_PLC,%I00164,%R02194,401194,FV04a_MTR_ELR,BOOL,Coal Valve 4 Vibrating Chute a Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00165,%R02195,401195,FV04a_MTR_TOL,BOOL,Coal Valve 4 Vibrating Chute a Motor Thermal Overload,0
+RLF_SUB_PLC,%I00166,%R02196,401196,FV04a_MTR_THM,BOOL,Coal Valve 4 Vibrating Chute a Motor Thermistor,0
+RLF_SUB_PLC,%I00167,%R02197,401197,FV04_LCU_STRT,BOOL,Coal Valve 4 Local Control Unit Vibrating Drives Local Start,0
+RLF_SUB_PLC,%I00168,%R02198,401198,FV04a_LCU_ISO,BOOL,Coal Valve 4 Vibrating Chute a Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00169,%R02199,401199,FV04_LCU_ESP,BOOL,Coal Valve 4 Local Control Unit Emergency Stop,0
+RLF_SUB_PLC,%I00172,%R02200,401200,FV04b_CTRP,BOOL,Coal Valve 4 Vibrating Chute b Control Power Available,1
+RLF_SUB_PLC,%I00173,%R02201,401201,FV04b_MTR_CB,BOOL,Coal Valve 4 Vibrating Chute b Motor Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00174,%R02202,401202,FV04b_MTR_CONT,BOOL,Coal Valve 4 Vibrating Chute b Motor Contactor Closed,0
+RLF_SUB_PLC,%I00175,%R02203,401203,FV04b_MTR_ELR,BOOL,Coal Valve 4 Vibrating Chute b Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00176,%R02204,401204,FV04b_MTR_TOL,BOOL,Coal Valve 4 Vibrating Chute b Motor Thermal Overload,0
+RLF_SUB_PLC,%I00177,%R02205,401205,FV04b_MTR_THM,BOOL,Coal Valve 4 Vibrating Chute b Motor Thermistor,0
+RLF_SUB_PLC,%I00178,%R02206,401206,FV04b_LCU_ISO,BOOL,Coal Valve 4 Vibrating Chute b Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00181,%R02207,401207,FV04c_CTRP,BOOL,Coal Valve 4 Control Gate Control Power Available,1
+RLF_SUB_PLC,%I00182,%R02208,401208,FV04c_ACT_CB,BOOL,Coal Valve 4 Control Gate Actuator Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00183,%R02209,401209,FV04c_ACT_OPNC,BOOL,Coal Valve 4 Control Gate Actuator Opening Contactor Closed,0
+RLF_SUB_PLC,%I00184,%R02210,401210,FV04c_ACT_CLSC,BOOL,Coal Valve 4 Control Gate Actuator Closing Contactor Closed,0
+RLF_SUB_PLC,%I00185,%R02211,401211,FV04c_ACT_ELR,BOOL,Coal Valve 4 Control Gate Actuator Earth Leakage Relay,1
+RLF_SUB_PLC,%I00186,%R02212,401212,FV04c_ACT_EOL,BOOL,Coal Valve 4 Control Gate Actuator Electronic Overload,1
+RLF_SUB_PLC,%I00187,%R02213,401213,FV04c_LCU_OPN,BOOL,Coal Valve 4 Control Gate Local Control Unit Open,0
+RLF_SUB_PLC,%I00188,%R02214,401214,FV04c_LCU_CLS,BOOL,Coal Valve 4 Control Gate Local Control Unit Closed,0
+RLF_SUB_PLC,%I00189,%R02215,401215,FV04c_LCU_ISO,BOOL,Coal Valve 4 Control Gate Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00190,%R02216,401216,FV04c_ACT_OSW,BOOL,Coal Valve 4 Control Gate Actuator Open Limit Switch,1
+RLF_SUB_PLC,%I00191,%R02217,401217,FV04c_ACT_CSW,BOOL,Coal Valve 4 Control Gate Actuator Closed Limit Switch,0
+RLF_SUB_PLC,%I00193,%R02218,401218,FV01d_CTRP,BOOL,Coal Valve 1 Cutoff Gate Control Power Available,1
+RLF_SUB_PLC,%I00194,%R02219,401219,FV01d_ACT_CB,BOOL,Coal Valve 1 Cutoff Gate Actuator Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00195,%R02220,401220,FV01d_ACT_OPNC,BOOL,Coal Valve 1 Cutoff Gate Actuator Opening Contactor Closed,0
+RLF_SUB_PLC,%I00196,%R02221,401221,FV01d_ACT_CLSC,BOOL,Coal Valve 1 Cutoff Gate Actuator Closing Contactor Closed,0
+RLF_SUB_PLC,%I00197,%R02222,401222,FV01d_ACT_ELR,BOOL,Coal Valve 1 Cutoff Gate Actuator Earth Leakage Relay,1
+RLF_SUB_PLC,%I00198,%R02223,401223,FV01d_ACT_TOL,BOOL,Coal Valve 1 Cutoff Gate Actuator Thermal Overload,1
+RLF_SUB_PLC,%I00199,%R02224,401224,FV01d_LCU_OPN,BOOL,Coal Valve 1 Cutoff Gate Local Control Unit Open,0
+RLF_SUB_PLC,%I00200,%R02225,401225,FV01d_LCU_CLS,BOOL,Coal Valve 1 Cutoff Gate Local Control Unit Closed,0
+RLF_SUB_PLC,%I00201,%R02226,401226,FV01d_LCU_ISO,BOOL,Coal Valve 1 Cutoff Gate Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00202,%R02227,401227,FV01d_ACT_CSW,BOOL,Coal Valve 1 Cutoff Gate Actuator Closed Limit Switch,0
+RLF_SUB_PLC,%I00203,%R02228,401228,FV01d_ACT_OSW,BOOL,Coal Valve 1 Cutoff Gate Actuator Open Limit Switch,1
+RLF_SUB_PLC,%I00204,%R02229,401229,FV01_STV,BOOL,Coal Valve 1 Flow Starved,0
+RLF_SUB_PLC,%I00209,%R02230,401230,FV02d_CTRP,BOOL,Coal Valve 2 Cutoff Gate Control Power Available,1
+RLF_SUB_PLC,%I00210,%R02231,401231,FV02d_ACT_CB,BOOL,Coal Valve 2 Cutoff Gate Actuator Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00211,%R02232,401232,FV02d_ACT_OPNC,BOOL,Coal Valve 2 Cutoff Gate Actuator Opening Contactor Closed,0
+RLF_SUB_PLC,%I00212,%R02233,401233,FV02d_ACT_CLSC,BOOL,Coal Valve 2 Cutoff Gate Actuator Closing Contactor Closed,0
+RLF_SUB_PLC,%I00213,%R02234,401234,FV02d_ACT_ELR,BOOL,Coal Valve 2 Cutoff Gate Actuator Earth Leakage Relay,1
+RLF_SUB_PLC,%I00214,%R02235,401235,FV02d_ACT_TOL,BOOL,Coal Valve 2 Cutoff Gate Actuator Thermal Overload,1
+RLF_SUB_PLC,%I00215,%R02236,401236,FV02d_LCU_OPN,BOOL,Coal Valve 2 Cutoff Gate Local Control Unit Open,0
+RLF_SUB_PLC,%I00216,%R02237,401237,FV02d_LCU_CLS,BOOL,Coal Valve 2 Cutoff Gate Local Control Unit Closed,0
+RLF_SUB_PLC,%I00217,%R02238,401238,FV02d_LCU_ISO,BOOL,Coal Valve 2 Local Control Unit Cutoff Gate Isolator Open,1
+RLF_SUB_PLC,%I00218,%R02239,401239,FV02d_ACT_CSW,BOOL,Coal Valve 2 Cutoff Gate Actuator Closed Limit Switch,0
+RLF_SUB_PLC,%I00219,%R02240,401240,FV02d_ACT_OSW,BOOL,Coal Valve 2 Cutoff Gate Actuator Open Limit Switch,1
+RLF_SUB_PLC,%I00220,%R02241,401241,FV02_STV,BOOL,Coal Valve 2 Flow Starved,0
+RLF_SUB_PLC,%I00225,%R02242,401242,FV03d_CTRP,BOOL,Coal Valve 3 Cutoff Gate Control Power Available,1
+RLF_SUB_PLC,%I00226,%R02243,401243,FV03d_ACT_CB,BOOL,Coal Valve 3 Cutoff Gate Actuator Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00227,%R02244,401244,FV03d_ACT_OPNC,BOOL,Coal Valve 3 Cutoff Gate Actuator Opening Contactor Closed,0
+RLF_SUB_PLC,%I00228,%R02245,401245,FV03d_ACT_CLSC,BOOL,Coal Valve 3 Cutoff Gate Actuator Closing Contactor Closed,0
+RLF_SUB_PLC,%I00229,%R02246,401246,FV03d_ACT_ELR,BOOL,Coal Valve 3 Cutoff Gate Actuator Earth Leakage Relay,1
+RLF_SUB_PLC,%I00230,%R02247,401247,FV03d_ACT_TOL,BOOL,Coal Valve 3 Cutoff Gate Actuator Thermal Overload,1
+RLF_SUB_PLC,%I00231,%R02248,401248,FV03d_LCU_OPN,BOOL,Coal Valve 3 Cutoff Gate Local Control Unit Open,0
+RLF_SUB_PLC,%I00232,%R02249,401249,FV03d_LCU_CLS,BOOL,Coal Valve 3 Cutoff Gate Local Control Unit Closed,0
+RLF_SUB_PLC,%I00233,%R02250,401250,FV03d_LCU_ISO,BOOL,Coal Valve 3 Cutoff Gate Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00234,%R02251,401251,FV03d_ACT_CSW,BOOL,Coal Valve 3 Cutoff Gate Actuator Closed Limit Switch,0
+RLF_SUB_PLC,%I00235,%R02252,401252,FV03d_ACT_OSW,BOOL,Coal Valve 3 Cutoff Gate Actuator Open Limit Switch,1
+RLF_SUB_PLC,%I00236,%R02253,401253,FV03_STV,BOOL,Coal Valve 3 Flow Starved,0
+RLF_SUB_PLC,%I00241,%R02254,401254,FV04d_CTRP,BOOL,Coal Valve 4 Cutoff Gate Control Power Available,1
+RLF_SUB_PLC,%I00242,%R02255,401255,FV04d_ACT_CB,BOOL,Coal Valve 4 Cutoff Gate Actuator Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00243,%R02256,401256,FV04d_ACT_OPNC,BOOL,Coal Valve 4 Cutoff Gate Actuator Opening Contactor Closed,0
+RLF_SUB_PLC,%I00244,%R02257,401257,FV04d_ACT_CLSC,BOOL,Coal Valve 4 Cutoff Gate Actuator Closing Contactor Closed,0
+RLF_SUB_PLC,%I00245,%R02258,401258,FV04d_ACT_ELR,BOOL,Coal Valve 4 Cutoff Gate Actuator Earth Leakage Relay,1
+RLF_SUB_PLC,%I00246,%R02259,401259,FV04d_ACT_TOL,BOOL,Coal Valve 4 Cutoff Gate Actuator Thermal Overload,1
+RLF_SUB_PLC,%I00247,%R02260,401260,FV04d_LCU_OPN,BOOL,Coal Valve 4 Cutoff Gate Local Control Unit Open,0
+RLF_SUB_PLC,%I00248,%R02261,401261,FV04d_LCU_CLS,BOOL,Coal Valve 4 Cutoff Gate Local Control Unit Closed,0
+RLF_SUB_PLC,%I00249,%R02262,401262,FV04d_LCU_ISO,BOOL,Coal Valve 4 Cutoff Gate Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00250,%R02263,401263,FV04d_ACT_CSW,BOOL,Coal Valve 5 Cutoff Gate Actuator Closed Limit Switch,0
+RLF_SUB_PLC,%I00251,%R02264,401264,FV04d_ACT_OSW,BOOL,Coal Valve 4 Cutoff Gate Actuator Open Limit Switch,1
+RLF_SUB_PLC,%I00252,%R02265,401265,FV04_STV,BOOL,Coal Valve 4 Flow Starved,0
+RLF_SUB_PLC,%I00256,%R02266,401266,RLF_FIP_GAS_ISOLATED,BOOL,Gas Alarm isolated at Fire Indication Panel,0
+RLF_SUB_PLC,%I00270,%R02267,401267,BN02_CTRP,BOOL,Bin Dust Collector Control Power Available,1
+RLF_SUB_PLC,%I00271,%R02268,401268,BN02_MTR_CB,BOOL,Bin Dust Collector Motor Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00272,%R02269,401269,BN02_MTR_CONT,BOOL,Bin Dust Collector Motor Contactor Closed,0
+RLF_SUB_PLC,%I00273,%R02270,401270,BN02_MTR_ELR,BOOL,Bin Dust Collector Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00274,%R02271,401271,BN02_MTR_TOL,BOOL,Bin Dust Collector Motor Thermal Overload,0
+RLF_SUB_PLC,%I00275,%R02272,401272,BN02_MTR_THM,BOOL,Bin Dust Collector Motor Thermistor,0
+RLF_SUB_PLC,%I00276,%R02273,401273,BN02_LCU_STRT,BOOL,Bin Dust Collector Local Control Unit Start,0
+RLF_SUB_PLC,%I00277,%R02274,401274,BN02_LCU_NISO,BOOL,Bin Dust Collector Local Control Unit Not Isolated,0
+RLF_SUB_PLC,%I00278,%R02275,401275,BN02_LCU_ESP,BOOL,Bin Dust Collector Local Control Unit Emergency Stop,0
+RLF_SUB_PLC,%I00281,%R02276,401276,SA02_CTRP,BOOL,Sample Plant Control Power Available,1
+RLF_SUB_PLC,%I00282,%R02277,401277,SA02_ELR,BOOL,Sample Plant Earth Leakage Relay,1
+RLF_SUB_PLC,%I00283,%R02278,401278,SA02_ESP1,BOOL,Sample Plant Emergency Stop 1,0
+RLF_SUB_PLC,%I00284,%R02279,401279,SA02_ESP2,BOOL,Sample Plant Emergency Stop 2,0
+RLF_SUB_PLC,%I00285,%R02280,401280,SA02_ESP3A,BOOL,Sample Plant Emergency Stop 3A,0
+RLF_SUB_PLC,%I00286,%R02281,401281,SA02_ESP3B,BOOL,Sample Plant Emergency Stop 3B,0
+RLF_SUB_PLC,%I00289,%R02282,401282,SA02a_MTR_CB,BOOL,Sample Plant Primary Sampler Motor Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00290,%R02283,401283,SA02a_MTR_CONT,BOOL,Sample Plant Primary Sampler Motor Contactor Closed,0
+RLF_SUB_PLC,%I00291,%R02284,401284,SA02a_MTR_TOL,BOOL,Sample Plant Primary Sampler Motor Thermal Overload,0
+RLF_SUB_PLC,%I00293,%R02285,401285,SA02a_MTR_THM,BOOL,Sample Plant Primary Sampler Motor Thermistor,0
+RLF_SUB_PLC,%I00294,%R02286,401286,SA02a_LCU_STRT,BOOL,Sample Plant Primary Sampler Local Control Unit Start,0
+RLF_SUB_PLC,%I00295,%R02287,401287,SA02a_LCU_ISO,BOOL,Sample Plant Primary Sampler Local Control Unit Isolator Open,0
+RLF_SUB_PLC,%I00297,%R02288,401288,SA02a_OBL,BOOL,Sample Plant Primary Sampler Over Belt Limit (0=Overbelt),1
+RLF_SUB_PLC,%I00306,%R02289,401289,CV05_MTR_CB,BOOL,Sample Plant Conveyor 5 Motor Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00307,%R02290,401290,CV05_MTR_CONT,BOOL,Sample Plant Conveyor 5 Motor Contactor Closed,0
+RLF_SUB_PLC,%I00308,%R02291,401291,CV05_MTR_TOL,BOOL,Sample Plant Conveyor 5 Motor Thermal Overload,0
+RLF_SUB_PLC,%I00309,%R02292,401292,CV05_LCU_STRT,BOOL,Sample Plant Conveyor 5 Local Control Unit Start,0
+RLF_SUB_PLC,%I00310,%R02293,401293,CV05_LCU_ISO,BOOL,Sample Plant Conveyor 5 Local Control Unit Isolator Open,0
+RLF_SUB_PLC,%I00311,%R02294,401294,CV05_PULLSW1A,BOOL,Sample Plant Conveyor 5 Pullwire Switch,0
+RLF_SUB_PLC,%I00312,%R02295,401295,CV05_PULLSW1B,BOOL,Sample Plant Conveyor 5 Pullwire Switch,0
+RLF_SUB_PLC,%I00313,%R02296,401296,SA02b_MTR_CB,BOOL,Sample Plant Screw Feeder Motor Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00314,%R02297,401297,SA02b_MTR_FWDC,BOOL,Sample Plant Screw Feeder Motor Forward Contactor Closed,0
+RLF_SUB_PLC,%I00315,%R02298,401298,SA02b_MTR_TOL,BOOL,Sample Plant Screw Feeder Motor Thermal Overload,0
+RLF_SUB_PLC,%I00316,%R02299,401299,SA02b_LCU_STRTFWD,BOOL,Sample Plant Screw Feeder Local Control Unit Start Forward,0
+RLF_SUB_PLC,%I00317,%R02300,401300,SA02b_LCU_STRTREV,BOOL,Sample Plant Screw Feeder Local Control Unit Start Reverse,0
+RLF_SUB_PLC,%I00318,%R02301,401301,SA02b_LCU_ISO,BOOL,Sample Plant Screw Feeder Local Control Unit Isolator Open,0
+RLF_SUB_PLC,%I00320,%R02302,401302,SA02c_MTR_CB,BOOL,Sample Plant Hammer Mill Motor Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00321,%R02303,401303,SA02c_MTR_CONT,BOOL,Sample Plant Hammer Mill Motor Contactor Closed,0
+RLF_SUB_PLC,%I00322,%R02304,401304,SA02c_MTR_TOL,BOOL,Sample Plant Hammer Mill Motor Thermal Overload,0
+RLF_SUB_PLC,%I00323,%R02305,401305,SA02c_LCU_STRT,BOOL,Sample Plant Hammer Mill Local Control Unit Start,0
+RLF_SUB_PLC,%I00324,%R02306,401306,SA02c_LCU_ISO,BOOL,Sample Plant Hammer Mill Local Control Unit Isolator Open,0
+RLF_SUB_PLC,%I00326,%R02307,401307,SA02d_MTR_CB,BOOL,Sample Plant Secondary Sampler Motor Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00327,%R02308,401308,SA02d_MTR_CONT,BOOL,Sample Plant Secondary Sampler Motor Contactor Closed,0
+RLF_SUB_PLC,%I00328,%R02309,401309,SA02d_MTR_TOL,BOOL,Sample Plant Secondary Sampler Motor Thermal Overload,0
+RLF_SUB_PLC,%I00330,%R02310,401310,SA02d_LCU_STRT,BOOL,Sample Plant Secondary Sampler Local Control Unit Start,0
+RLF_SUB_PLC,%I00331,%R02311,401311,SA02d_LCU_ISO,BOOL,Sample Plant Secondary Sampler Local Control Unit Isolator Open,0
+RLF_SUB_PLC,%I00332,%R02312,401312,SA02d_PRK,BOOL,Sample Plant Secondary Sampler Parked,1
+RLF_SUB_PLC,%I00334,%R02313,401313,SA02e_MTR_CB,BOOL,Sample Plant Carousel Motor Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00335,%R02314,401314,SA02e_MTR_CONT,BOOL,Sample Plant Carousel Motor Contactor Closed,0
+RLF_SUB_PLC,%I00336,%R02315,401315,SA02e_MTR_TOL,BOOL,Sample Plant Carousel Motor Thermal Overload,0
+RLF_SUB_PLC,%I00338,%R02316,401316,SA02e_LCU_STRT,BOOL,Sample Plant Carousel Local Control Unit Start,0
+RLF_SUB_PLC,%I00339,%R02317,401317,SA02e_LCU_ISO,BOOL,Sample Plant Carousel Local Control Unit Isolator Open,0
+RLF_SUB_PLC,%I00340,%R02318,401318,SA02e_SW_CAN,BOOL,Sample Plant Carousel Sample Can In Position Limit,0
+RLF_SUB_PLC,%I00341,%R02319,401319,SA02e_SW_FIRSTCAN,BOOL,Sample Plant Carousel Sample First Can In Position Limit,1
+RLF_SUB_PLC,%I00342,%R02320,401320,SA02e_RESET,BOOL,Sample Plant Carousel Reset,0
+RLF_SUB_PLC,%I00343,%R02321,401321,SA02e_DOOR_LIM,BOOL,Sample Plant Carousel Access Door Limit,0
+RLF_SUB_PLC,%I00352,%R02322,401322,CV04_WGH07_FLT,BOOL,Conveyor 7 Belt Weigher Fault,1
+RLF_SUB_PLC,%I00353,%R02323,401323,RLF_SUB_MCCCB1_CLD,BOOL,Substation MCC Incomer Closed,1
+RLF_SUB_PLC,%I00354,%R02324,401324,RLF_SUB_MCCCB1_POSITN,BOOL,Substation MCC Incomer Operating Position,1
+RLF_SUB_PLC,%I00355,%R02325,401325,RLF_SUB_MCCCB1_ELR,BOOL,Substation MCC Incomer Earth Leakage Relay,1
+RLF_SUB_PLC,%I00356,%R02326,401326,RLF_SUB_PM_KWHRS,BOOL,Substation Power Meter Kilowatt Hours,0
+RLF_SUB_PLC,%I00357,%R02327,401327,RLF_SUB_ESP1,BOOL,Substation Emergency Stop 1,0
+RLF_SUB_PLC,%I00358,%R02328,401328,RLF_SUB_ESP2,BOOL,Substation Emergency Stop 2,0
+RLF_SUB_PLC,%I00359,%R02329,401329,TX04_TMPHIGH,BOOL,Substation Transformer 4 Temperature High,0
+RLF_SUB_PLC,%I00360,%R02330,401330,TX04_PRHIGH,BOOL,Substation Transformer 4 Pressure High,0
+RLF_SUB_PLC,%I00361,%R02331,401331,TX04_VNT_OPN,BOOL,Substation Transformer 4 Relief Vent Open,0
+RLF_SUB_PLC,%I00362,%R02332,401332,RLF_CTRL_ROOM_ESP,BOOL,Rail Load Out Facility Control Room Emergency Stop,0
+RLF_SUB_PLC,%I00363,%R02333,401333,RLF_SUB_UPS_BATTLOW,BOOL,Substation UPS Battery Low Battery,0
+RLF_SUB_PLC,%I00364,%R02334,401334,RLF_SUB_FIRE_ALARM,BOOL,Substation Fire Panel Fire Alarm,0
+RLF_SUB_PLC,%I00365,%R02335,401335,RLF_SUB_FIRE_FLT,BOOL,Substation Fire Panel Fault,0
+RLF_SUB_PLC,%I00366,%R02336,401336,RLF_SUB_UPS_BATTON,BOOL,Substation Uninterruptible Power Supply Battery On,1
+RLF_SUB_PLC,%I00367,%R02337,401337,RLF_SUB_UPS_BYP,BOOL,Substation Uninterruptible Power Supply Bypass,1
+RLF_SUB_PLC,%I00368,%R02338,401338,RLF_SUB_UPS_FLT,BOOL,Substation Uninterruptible Power Supply Fault,1
+RLF_SUB_PLC,%I00369,%R02339,401339,BN02_PRLOW,BOOL,Compressor Pressure Low,0
+RLF_SUB_PLC,%I00370,%R02340,401340,CV04_BIN_LVLHI,BOOL,Conveyor 4 Bin Level High Switch,1
+RLF_SUB_PLC,%I00371,%R02341,401341,CV04_WGH05_FLT,BOOL,Conveyor 4 Belt Weigher 5 Fault,1
+RLF_SUB_PLC,%I00372,%R02342,401342,CV04_WGH05_INC,BOOL,Conveyor 4 Belt Weigher Increment Tonnes Pulse,0
+RLF_SUB_PLC,%I00373,%R02343,401343,CV04_WGH04_FLT,BOOL,Conveyor 4 Belt Weigher 3 Fault,1
+RLF_SUB_PLC,%I00374,%R02344,401344,CV04_WGH04_INC,BOOL,Conveyor 4 Belt Weigher Increment Tonnes Pulse,0
+RLF_SUB_PLC,%I00375,%R02345,401345,CV04_WGH03_FLT,BOOL,Conveyor 4 Belt Weigher 4 Fault,1
+RLF_SUB_PLC,%I00376,%R02346,401346,CV04_WGH03_INC,BOOL,Conveyor 4 Belt Weigher Increment Tonnes Pulse,0
+RLF_SUB_PLC,%I00377,%R02347,401347,CV04_WGH02_FLT,BOOL,Conveyor 4 Belt Weigher Fault,1
+RLF_SUB_PLC,%I00378,%R02348,401348,CV04_WGH02_INC,BOOL,Conveyor 4 Belt Weigher Increment 10T Pulse,0
+RLF_SUB_PLC,%I00379,%R02349,401349,RLF_SUB_TNLFIRE,BOOL,Tunnel Fire Alarm,0
+RLF_SUB_PLC,%I00380,%R02350,401350,RLF_SUB_MAINFIP_FLT,BOOL,Main Fire Panel Fault,0
+RLF_SUB_PLC,%I00381,%R02351,401351,CV04_WGH07_INC,BOOL,Conveyor 4 Belt Weigher Increment Tonnes Pulse,0
+RLF_SUB_PLC,%I00382,%R02352,401352,RLF_SUB2_ESP1,BOOL,RLF VSD Sub E-Stop1,0
+RLF_SUB_PLC,%I00383,%R02353,401353,RLF_SUB2_ESP2,BOOL,RLF VSD Sub E-Stop2,0
+RLF_SUB_PLC,%I00384,%R02354,401354,RLF_CTRL_ROOM_ESP2,BOOL,Rail Load Out Facility Control Room Emergency Stop 2,0
+RLF_SUB_PLC,%I00385,%R02355,401355,FV05a_CTRP,BOOL,Coal Valve 5 Vibrating Chute a Control Power Available,1
+RLF_SUB_PLC,%I00386,%R02356,401356,FV05a_MTR_CB,BOOL,Coal Valve 5 Vibrating Chute a Motor Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00387,%R02357,401357,FV05a_MTR_CONT,BOOL,Coal Valve 5 Vibrating Chute a Motor Contactor Closed,0
+RLF_SUB_PLC,%I00388,%R02358,401358,FV05a_MTR_ELR,BOOL,Coal Valve 5 Vibrating Chute a Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00389,%R02359,401359,FV05a_MTR_TOL,BOOL,Coal Valve 5 Vibrating Chute a Motor Thermal Overload,0
+RLF_SUB_PLC,%I00390,%R02360,401360,FV05a_MTR_THM,BOOL,Coal Valve 5 Vibrating Chute a Motor Thermistor,0
+RLF_SUB_PLC,%I00391,%R02361,401361,FV05_LCU_STRT,BOOL,Coal Valve 5 Local Control Unit Vibrating Drives Local Start,0
+RLF_SUB_PLC,%I00392,%R02362,401362,FV05a_LCU_ISO,BOOL,Coal Valve 5 Vibrating Chute a Local Control Unit Isolator Closed,1
+RLF_SUB_PLC,%I00393,%R02363,401363,FV05_LCU_ESP,BOOL,Coal Valve 5 Local Control Unit Emergency Stop,0
+RLF_SUB_PLC,%I00396,%R02364,401364,FV05b_CTRP,BOOL,Coal Valve 5 Vibrating Chute b Control Power Available,1
+RLF_SUB_PLC,%I00397,%R02365,401365,FV05b_MTR_CB,BOOL,Coal Valve 5 Vibrating Chute b Motor Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00398,%R02366,401366,FV05b_MTR_CONT,BOOL,Coal Valve 5 Vibrating Chute b Motor Contactor Closed,0
+RLF_SUB_PLC,%I00399,%R02367,401367,FV05b_MTR_ELR,BOOL,Coal Valve 5 Vibrating Chute b Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00400,%R02368,401368,FV05b_MTR_TOL,BOOL,Coal Valve 5 Vibrating Chute b Motor Thermal Overload,0
+RLF_SUB_PLC,%I00401,%R02369,401369,FV05b_MTR_THM,BOOL,Coal Valve 5 Vibrating Chute b Motor Thermistor,0
+RLF_SUB_PLC,%I00402,%R02370,401370,FV05b_LCU_ISO,BOOL,Coal Valve 5 Vibrating Chute b Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00405,%R02371,401371,FV05c_CTRP,BOOL,Coal Valve 5 Control Gate Control Power Available,1
+RLF_SUB_PLC,%I00406,%R02372,401372,FV05c_ACT_CB,BOOL,Coal Valve 5 Control Gate Actuator Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00407,%R02373,401373,FV05c_ACT_OPNC,BOOL,Coal Valve 5 Control Gate Actuator Opening Contactor Closed,0
+RLF_SUB_PLC,%I00408,%R02374,401374,FV05c_ACT_CLSC,BOOL,Coal Valve 5 Control Gate Actuator Closing Contactor Closed,0
+RLF_SUB_PLC,%I00409,%R02375,401375,FV05c_ACT_ELR,BOOL,Coal Valve 5 Control Gate Actuator Earth Leakage Relay,1
+RLF_SUB_PLC,%I00410,%R02376,401376,FV05c_ACT_EOL,BOOL,Coal Valve 5 Control Gate Actuator Electronic Overload,1
+RLF_SUB_PLC,%I00411,%R02377,401377,FV05c_LCU_OPN,BOOL,Coal Valve 5 Control Gate Local Control Unit Open,0
+RLF_SUB_PLC,%I00412,%R02378,401378,FV05c_LCU_CLS,BOOL,Coal Valve 5 Control Gate Local Control Unit Closed,0
+RLF_SUB_PLC,%I00413,%R02379,401379,FV05c_LCU_ISO,BOOL,Coal Valve 5 Control Gate Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00414,%R02380,401380,FV05c_ACT_OSW,BOOL,Coal Valve 5 Control Gate Actuator Open Limit Switch,1
+RLF_SUB_PLC,%I00415,%R02381,401381,FV05c_ACT_CSW,BOOL,Coal Valve 5 Control Gate Actuator Closed Limit Switch,0
+RLF_SUB_PLC,%I00417,%R02382,401382,FV05d_CTRP,BOOL,Coal Valve 5 Cutoff Gate Control Power Available,1
+RLF_SUB_PLC,%I00418,%R02383,401383,FV05d_ACT_CB,BOOL,Coal Valve 5 Cutoff Gate Actuator Circuit Breaker Closed,0
+RLF_SUB_PLC,%I00419,%R02384,401384,FV05d_ACT_OPNC,BOOL,Coal Valve 5 Cutoff Gate Actuator Opening Contactor Closed,0
+RLF_SUB_PLC,%I00420,%R02385,401385,FV05d_ACT_CLSC,BOOL,Coal Valve 5 Cutoff Gate Actuator Closing Contactor Closed,0
+RLF_SUB_PLC,%I00421,%R02386,401386,FV05d_ACT_ELR,BOOL,Coal Valve 5 Cutoff Gate Actuator Earth Leakage Relay,1
+RLF_SUB_PLC,%I00422,%R02387,401387,FV05d_ACT_TOL,BOOL,Coal Valve 5 Cutoff Gate Actuator Thermal Overload,1
+RLF_SUB_PLC,%I00423,%R02388,401388,FV05d_LCU_OPN,BOOL,Coal Valve 5 Cutoff Gate Local Control Unit Open,0
+RLF_SUB_PLC,%I00424,%R02389,401389,FV05d_LCU_CLS,BOOL,Coal Valve 5 Cutoff Gate Local Control Unit Closed,0
+RLF_SUB_PLC,%I00425,%R02390,401390,FV05d_LCU_ISO,BOOL,Coal Valve 5 Cutoff Gate Local Control Unit Isolator Open,1
+RLF_SUB_PLC,%I00426,%R02391,401391,FV05d_ACT_CSW,BOOL,Coal Valve 5 Cutoff Gate Actuator Closed Limit Switch,0
+RLF_SUB_PLC,%I00427,%R02392,401392,FV05d_ACT_OSW,BOOL,Coal Valve 5 Cutoff Gate Actuator Open Limit Switch,1
+RLF_SUB_PLC,%I00428,%R02393,401393,FV05_STV,BOOL,Coal Valve 5 Flow Starved,0
+RLF_SUB_PLC,%I00429,%R02394,401394,FV05D_ACT_OOTSW,BOOL,Coal Valve 5 Cutoff Gate Open Overtravel Switch,1
+RLF_SUB_PLC,%I00430,%R02395,401395,FV05D_ACT_COTSW,BOOL,,1
+RLF_SUB_PLC,%I00431,%R02396,401396,FN01_CTRP,BOOL,Vent Fan Control Power Available,1
+RLF_SUB_PLC,%I00432,%R02397,401397,FN01_MTR_CB,BOOL,Vent Fan Drive Motor Circuit Breaker Closed,1
+RLF_SUB_PLC,%I00433,%R02398,401398,FN01_MTR_CONT,BOOL,Vent Fan Drive Motor Contactor Closed,1
+RLF_SUB_PLC,%I00434,%R02399,401399,FN01_MTR_ELR,BOOL,Vent Fan Drive Motor Earth Leakage Relay,1
+RLF_SUB_PLC,%I00435,%R02400,401400,FN01_MTR_TOL,BOOL,Vent Fan Drive Motor Thermal Overload,0
+RLF_SUB_PLC,%I00436,%R02401,401401,FN01_LCU_STRT,BOOL,Vent Fan Local Control Unit Start,0
+RLF_SUB_PLC,%I00437,%R02402,401402,FN01_LCU_ISO,BOOL,Vent Fan Local Control Unit Isolator Closed,1
+RLF_SUB_PLC,%I00438,%R02403,401403,FN01_LCU_ESP,BOOL,Vent Fan Local Control Unit Emergency Stop,0
+RLF_SUB_PLC,%I00439,%R02404,401404,FN01_FLWLOW,BOOL,Vent Fan Flow Low,1
+RLF_SUB_PLC,%I02013,%R02405,401405,ETH_LAN_OK,BOOL,LAN OK,1
+RLF_SUB_PLC,%I02016,%R02406,401406,ETH_IFACE_OK,BOOL,LAN Interface OK,1
+RLF_SUB_PLC,%I02017,%R02407,401407,ETH_CH1_OPN,BOOL,Ethernet Channel 1 Open,1
+RLF_SUB_PLC,%I02019,%R02408,401408,ETH_CH2_OPN,BOOL,Ethernet Channel 2 Open,0
+RLF_SUB_PLC,%I02021,%R02409,401409,ETH_CH3_OPN,BOOL,Ethernet Channel 3 Open,0
+RLF_SUB_PLC,%I02023,%R02410,401410,ETH_CH4_OPN,BOOL,Ethernet Channel 4 Open,0
+RLF_SUB_PLC,%I02121,%R02411,401411,aatempdiag1,BOOL,,0
+RLF_SUB_PLC,%I02121,%R02412,401412,aatempdiag1[00],BOOL,,0
+RLF_SUB_PLC,%I02122,%R02413,401413,aatempdiag1[01],BOOL,,0
+RLF_SUB_PLC,%I02123,%R02414,401414,aatempdiag1[02],BOOL,,0
+RLF_SUB_PLC,%I02124,%R02415,401415,aatempdiag1[03],BOOL,,0
+RLF_SUB_PLC,%I02125,%R02416,401416,aatempdiag1[04],BOOL,,0
+RLF_SUB_PLC,%I02126,%R02417,401417,aatempdiag1[05],BOOL,,0
+RLF_SUB_PLC,%I02127,%R02418,401418,aatempdiag1[06],BOOL,,0
+RLF_SUB_PLC,%I02128,%R02419,401419,aatempdiag1[07],BOOL,,0
+RLF_SUB_PLC,%I02129,%R02420,401420,aatempdiag1[08],BOOL,,0
+RLF_SUB_PLC,%I02130,%R02421,401421,aatempdiag1[09],BOOL,,0
+RLF_SUB_PLC,%I02131,%R02422,401422,aatempdiag1[10],BOOL,,0
+RLF_SUB_PLC,%I02132,%R02423,401423,aatempdiag1[11],BOOL,,0
+RLF_SUB_PLC,%I02133,%R02424,401424,aatempdiag1[12],BOOL,,0
+RLF_SUB_PLC,%I02134,%R02425,401425,aatempdiag1[13],BOOL,,0
+RLF_SUB_PLC,%I02135,%R02426,401426,aatempdiag1[14],BOOL,,0
+RLF_SUB_PLC,%I02136,%R02427,401427,aatempdiag1[15],BOOL,,0
+RLF_SUB_PLC,%I02137,%R02428,401428,aatempdiag1[16],BOOL,,0
+RLF_SUB_PLC,%I02138,%R02429,401429,aatempdiag1[17],BOOL,,0
+RLF_SUB_PLC,%I02139,%R02430,401430,aatempdiag1[18],BOOL,,0
+RLF_SUB_PLC,%I02140,%R02431,401431,aatempdiag1[19],BOOL,,0
+RLF_SUB_PLC,%I02141,%R02432,401432,aatempdiag1[20],BOOL,,0
+RLF_SUB_PLC,%I02142,%R02433,401433,aatempdiag1[21],BOOL,,0
+RLF_SUB_PLC,%I02143,%R02434,401434,aatempdiag1[22],BOOL,,0
+RLF_SUB_PLC,%I02144,%R02435,401435,aatempdiag1[23],BOOL,,0
+RLF_SUB_PLC,%I02145,%R02436,401436,aatempdiag1[24],BOOL,,0
+RLF_SUB_PLC,%I02146,%R02437,401437,aatempdiag1[25],BOOL,,0
+RLF_SUB_PLC,%I02147,%R02438,401438,aatempdiag1[26],BOOL,,0
+RLF_SUB_PLC,%I02148,%R02439,401439,aatempdiag1[27],BOOL,,0
+RLF_SUB_PLC,%I02149,%R02440,401440,aatempdiag1[28],BOOL,,0
+RLF_SUB_PLC,%I02150,%R02441,401441,aatempdiag1[29],BOOL,,0
+RLF_SUB_PLC,%I02151,%R02442,401442,aatempdiag1[30],BOOL,,0
+RLF_SUB_PLC,%I02152,%R02443,401443,aatempdiag1[31],BOOL,,0
+RLF_SUB_PLC,%I02641,%R02444,401444,aatempstat,BOOL,,0
+RLF_SUB_PLC,%I02641,%R02445,401445,aatempstat[00],BOOL,,0
+RLF_SUB_PLC,%I02642,%R02446,401446,aatempstat[01],BOOL,,0
+RLF_SUB_PLC,%I02643,%R02447,401447,aatempstat[02],BOOL,,0
+RLF_SUB_PLC,%I02644,%R02448,401448,aatempstat[03],BOOL,,0
+RLF_SUB_PLC,%I02645,%R02449,401449,aatempstat[04],BOOL,,0
+RLF_SUB_PLC,%I02646,%R02450,401450,aatempstat[05],BOOL,,0
+RLF_SUB_PLC,%I02647,%R02451,401451,aatempstat[06],BOOL,,0
+RLF_SUB_PLC,%I02648,%R02452,401452,aatempstat[07],BOOL,,0
+RLF_SUB_PLC,%I02649,%R02453,401453,aatempstat[08],BOOL,,0
+RLF_SUB_PLC,%I02650,%R02454,401454,aatempstat[09],BOOL,,0
+RLF_SUB_PLC,%I02651,%R02455,401455,aatempstat[10],BOOL,,0
+RLF_SUB_PLC,%I02652,%R02456,401456,aatempstat[11],BOOL,,0
+RLF_SUB_PLC,%I02653,%R02457,401457,aatempstat[12],BOOL,,0
+RLF_SUB_PLC,%I02654,%R02458,401458,aatempstat[13],BOOL,,0
+RLF_SUB_PLC,%I02655,%R02459,401459,aatempstat[14],BOOL,,0
+RLF_SUB_PLC,%I02656,%R02460,401460,aatempstat[15],BOOL,,0
+RLF_SUB_PLC,%I02657,%R02461,401461,aatempstat[16],BOOL,,0
+RLF_SUB_PLC,%I02658,%R02462,401462,aatempstat[17],BOOL,,0
+RLF_SUB_PLC,%I02659,%R02463,401463,aatempstat[18],BOOL,,0
+RLF_SUB_PLC,%I02660,%R02464,401464,aatempstat[19],BOOL,,0
+RLF_SUB_PLC,%I02661,%R02465,401465,aatempstat[20],BOOL,,0
+RLF_SUB_PLC,%I02662,%R02466,401466,aatempstat[21],BOOL,,0
+RLF_SUB_PLC,%I02663,%R02467,401467,aatempstat[22],BOOL,,0
+RLF_SUB_PLC,%I02664,%R02468,401468,aatempstat[23],BOOL,,0
+RLF_SUB_PLC,%I02665,%R02469,401469,aatempstat[24],BOOL,,0
+RLF_SUB_PLC,%I02666,%R02470,401470,aatempstat[25],BOOL,,0
+RLF_SUB_PLC,%I02667,%R02471,401471,aatempstat[26],BOOL,,0
+RLF_SUB_PLC,%I02668,%R02472,401472,aatempstat[27],BOOL,,0
+RLF_SUB_PLC,%I02669,%R02473,401473,aatempstat[28],BOOL,,0
+RLF_SUB_PLC,%I02670,%R02474,401474,aatempstat[29],BOOL,,0
+RLF_SUB_PLC,%I02671,%R02475,401475,aatempstat[30],BOOL,,0
+RLF_SUB_PLC,%I02672,%R02476,401476,aatempstat[31],BOOL,,0
+RLF_SUB_PLC,%Q00001,%R02477,401477,CV04_MTR1_ENB,BOOL,Conveyor 4 Drive A Start Relay,0
+RLF_SUB_PLC,%Q00002,%R02478,401478,CV04_WH,BOOL,Conveyor 4 Warning Hooter,0
+RLF_SUB_PLC,%Q00003,%R02479,401479,CV04_BRK1_FWD,BOOL,Conveyor 4 Drive a Brake Forward,0
+RLF_SUB_PLC,%Q00004,%R02480,401480,CV04_BRK1_RLS,BOOL,Conveyor 4 Drive a Brake Lift Solenoid On,0
+RLF_SUB_PLC,%Q00005,%R02481,401481,CV04_MTR2_ENB,BOOL,Conveyor 4 Drive B Start Relay,0
+RLF_SUB_PLC,%Q00006,%R02482,401482,CV04_BRK2_FWD,BOOL,Conveyor 4 Drive b Brake Forward,0
+RLF_SUB_PLC,%Q00007,%R02483,401483,CV04_BRK2_RLS,BOOL,Conveyor 4 Drive b Brake Lift Solenoid,0
+RLF_SUB_PLC,%Q00008,%R02484,401484,FV01a_MTR_FWD,BOOL,Coal Valve 1 Vibrating Chute a Motor Forward,0
+RLF_SUB_PLC,%Q00009,%R02485,401485,FV01b_MTR_FWD,BOOL,Coal Valve 1 Vibrating Chute b Motor Forward,0
+RLF_SUB_PLC,%Q00010,%R02486,401486,FV01c_ACT_FWD,BOOL,Coal Valve 1 Control Gate Actuator Open/Forward,0
+RLF_SUB_PLC,%Q00011,%R02487,401487,FV01c_ACT_REV,BOOL,Coal Valve 1 Control Gate Actuator Close/Reverse,0
+RLF_SUB_PLC,%Q00012,%R02488,401488,FV01d_ACT_FWD,BOOL,Coal Valve 1 Cutoff Gate Actuator Open/Forward,0
+RLF_SUB_PLC,%Q00013,%R02489,401489,FV01d_ACT_REV,BOOL,Coal Valve 1 Cutoff Gate Actuator Close/Reverse,0
+RLF_SUB_PLC,%Q00014,%R02490,401490,FV02a_MTR_FWD,BOOL,Coal Valve 2 Vibrating Chute a Motor Forward,0
+RLF_SUB_PLC,%Q00015,%R02491,401491,FV02b_MTR_FWD,BOOL,Coal Valve 2 Vibrating Chute b Motor Forward,0
+RLF_SUB_PLC,%Q00016,%R02492,401492,FV02c_ACT_FWD,BOOL,Coal Valve 2 Control Gate Actuator Open/Forward,0
+RLF_SUB_PLC,%Q00017,%R02493,401493,FV02c_ACT_REV,BOOL,Coal Valve 2 Control Gate Actuator Close/Reverse,0
+RLF_SUB_PLC,%Q00018,%R02494,401494,FV02d_ACT_FWD,BOOL,Coal Valve 2 Cutoff Gate Actuator Open/Forward,0
+RLF_SUB_PLC,%Q00019,%R02495,401495,FV02d_ACT_REV,BOOL,Coal Valve 2 Cutoff Gate Actuator Close/Reverse,0
+RLF_SUB_PLC,%Q00020,%R02496,401496,FV03a_MTR_FWD,BOOL,Coal Valve 3 Vibrating Chute a Motor Forward,0
+RLF_SUB_PLC,%Q00021,%R02497,401497,FV03b_MTR_FWD,BOOL,Coal Valve 3 Vibrating Chute b Motor Forward,0
+RLF_SUB_PLC,%Q00022,%R02498,401498,FV03c_ACT_FWD,BOOL,Coal Valve 3 Control Gate Actuator Open/Forward,0
+RLF_SUB_PLC,%Q00023,%R02499,401499,FV03c_ACT_REV,BOOL,Coal Valve 3 Control Gate Actuator Close/Reverse,0
+RLF_SUB_PLC,%Q00024,%R02500,401500,FV03d_ACT_FWD,BOOL,Coal Valve 3 Cutoff Gate Actuator Open/Forward,0
+RLF_SUB_PLC,%Q00025,%R02501,401501,FV03d_ACT_REV,BOOL,Coal Valve 3 Cutoff Gate Actuator Close/Reverse,0
+RLF_SUB_PLC,%Q00026,%R02502,401502,FV04a_MTR_FWD,BOOL,Coal Valve 4 Vibrating Chute a Motor Forward,0
+RLF_SUB_PLC,%Q00027,%R02503,401503,FV04b_MTR_FWD,BOOL,Coal Valve 4 Vibrating Chute b Motor Forward,0
+RLF_SUB_PLC,%Q00028,%R02504,401504,FV04c_ACT_FWD,BOOL,Coal Valve 4 Control Gate Actuator Open/Forward,0
+RLF_SUB_PLC,%Q00029,%R02505,401505,FV04c_ACT_REV,BOOL,Coal Valve 4 Control Gate Actuator Close/Reverse,0
+RLF_SUB_PLC,%Q00030,%R02506,401506,FV04d_ACT_FWD,BOOL,Coal Valve 4 Cutoff Gate Actuator Open Forward,0
+RLF_SUB_PLC,%Q00031,%R02507,401507,FV04d_ACT_REV,BOOL,Coal Valve 4 Cutoff Gate Actuator Close/Reverse,0
+RLF_SUB_PLC,%Q00032,%R02508,401508,CV04_MTR1_FWD,BOOL,Conveyor 4 Drive A Forward,0
+RLF_SUB_PLC,%Q00033,%R02509,401509,CV04_MTR2_FWD,BOOL,Conveyor 4 Drive B Forward,0
+RLF_SUB_PLC,%Q00034,%R02510,401510,BN02_MTR_FWD,BOOL,Bin Dust Collector Motor Forward,0
+RLF_SUB_PLC,%Q00035,%R02511,401511,BN02_DSSOL_ON,BOOL,Bin Dust Collector Solenoid On,0
+RLF_SUB_PLC,%Q00036,%R02512,401512,SA02_RUN,BOOL,Sample Plant Running,0
+RLF_SUB_PLC,%Q00037,%R02513,401513,SA02_RDY,BOOL,Sample Plant Ready,1
+RLF_SUB_PLC,%Q00038,%R02514,401514,SA02_FLT,BOOL,Sample Plant Fault,0
+RLF_SUB_PLC,%Q00039,%R02515,401515,SA02a_MTR_FWD,BOOL,Sample Plant Primary Sampler Motor Forward,0
+RLF_SUB_PLC,%Q00040,%R02516,401516,CV05_MTR_FWD,BOOL,Sample Plant Conveyor 5 Motor Forward,0
+RLF_SUB_PLC,%Q00041,%R02517,401517,SA02b_MTR_FWD,BOOL,Sample Plant Screw Feeder Motor Forward,0
+RLF_SUB_PLC,%Q00042,%R02518,401518,SA02c_MTR_FWD,BOOL,Sample Plant Hammer Mill Motor Forward,0
+RLF_SUB_PLC,%Q00043,%R02519,401519,SA02d_MTR_FWD,BOOL,Sample Plant Secondary Sampler Motor Forward,0
+RLF_SUB_PLC,%Q00044,%R02520,401520,SA02e_MTR_FWD,BOOL,Sample Plant Carousel Motor Forward,0
+RLF_SUB_PLC,%Q00045,%R02521,401521,SA02b_MTR_REV,BOOL,Sample Plant Screw Feeder Motor Reverse,0
+RLF_SUB_PLC,%Q00046,%R02522,401522,SA02a_BRK_RLS,BOOL,Sample Plant Primary Sampler Motor Brake Release,0
+RLF_SUB_PLC,%Q00047,%R02523,401523,SA02a_HLTHY,BOOL,SA02a Healthy,0
+RLF_SUB_PLC,%Q00049,%R02524,401524,FV01_DSSOL_ON,BOOL,Coal Valve 1 Dust Suppresion Solenoid On,0
+RLF_SUB_PLC,%Q00050,%R02525,401525,FV02_DSSOL_ON,BOOL,Coal Valve 2 Dust Suppresion Solenoid On,0
+RLF_SUB_PLC,%Q00051,%R02526,401526,FV03_DSSOL_ON,BOOL,Coal Valve 3 Dust Suppresion Solenoid On,0
+RLF_SUB_PLC,%Q00052,%R02527,401527,FV04_DSSOL_ON,BOOL,Coal Valve 4 Dust Suppresion Solenoid On,0
+RLF_SUB_PLC,%Q00053,%R02528,401528,RLF_GASSIREN,BOOL,Tunnel Evacuation  Relay,1
+RLF_SUB_PLC,%Q00054,%R02529,401529,RLF_FIPGAS,BOOL,Gas Detected FIP Relay,1
+RLF_SUB_PLC,%Q00055,%R02530,401530,FV05_DSSOL_ON,BOOL,Coal Valve 5 Dust Suppresion Solenoid On,0
+RLF_SUB_PLC,%Q00056,%R02531,401531,RLF_TNL_ALERT_RED,BOOL,Tunnel Alert Red Light,0
+RLF_SUB_PLC,%Q00057,%R02532,401532,RLF_TNL_ALERT_GREEN,BOOL,Tunnel Alert Gren Light,1
+RLF_SUB_PLC,%Q00058,%R02533,401533,RLF_TNL_ALERT_SIREN,BOOL,Tunnel Alert Siren,0
+RLF_SUB_PLC,%Q00065,%R02534,401534,FV05a_MTR_FWD,BOOL,Coal Valve 5 Vibrating Chute a Motor Forward,0
+RLF_SUB_PLC,%Q00066,%R02535,401535,FV05b_MTR_FWD,BOOL,Coal Valve 5 Vibrating Chute b Motor Forward,0
+RLF_SUB_PLC,%Q00067,%R02536,401536,FV05c_ACT_FWD,BOOL,Coal Valve 5 Control Gate Actuator Open/Forward,0
+RLF_SUB_PLC,%Q00068,%R02537,401537,FV05c_ACT_REV,BOOL,Coal Valve 5 Control Gate Actuator Close/Reverse,0
+RLF_SUB_PLC,%Q00069,%R02538,401538,FV05d_ACT_FWD,BOOL,Coal Valve 5 Cutoff Gate Actuator Open Forward,0
+RLF_SUB_PLC,%Q00070,%R02539,401539,FV05d_ACT_REV,BOOL,Coal Valve 5 Cutoff Gate Actuator Close/Reverse,0
+RLF_SUB_PLC,%Q00071,%R02540,401540,FN01_MTR_FWD,BOOL,Vent Fan Drive Motor Forward,1
