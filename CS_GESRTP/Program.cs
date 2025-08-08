@@ -138,7 +138,7 @@ namespace CS_GESRTP
 
     internal class Program
     {
-        private const string ModbusIp = "192.168.30.181";   // shared slave
+        private const string ModbusIp = "192.168.30.183";   // shared slave
         private const byte SlaveId = 1;                  // Unit‑ID / slave‑ID
         private const int ModbusPort = 502;               // default
 
